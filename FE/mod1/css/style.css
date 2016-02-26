@@ -12,8 +12,9 @@ body{
     width: 400px;
 }
 p {
+    line-height: 30px;
     padding-left: 20px;
 }
 .line {
-    border-bottom: solid 1px lightgrey;
+    border-bottom: solid 1px black
 }
