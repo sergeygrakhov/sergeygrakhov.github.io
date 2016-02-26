@@ -1,0 +1,19 @@
+.photo, h1 {
+    text-align: center;
+}
+
+body{
+    background-color: lightgray;
+}
+.main {
+    padding: 10px 30px 20px;
+    margin: 0 auto;
+    background-color: white;
+    width: 400px;
+}
+p {
+    padding-left: 20px;
+}
+.line {
+    border-bottom: solid 1px lightgrey;
+}
