@@ -106,7 +106,6 @@ a {
 .center {
     float:left;
     width: 578px;
-    height: 100%;
     background-color: #FFF;
     border-left: 1px solid #c7cacf;
     border-right: 1px solid #c7cacf;
@@ -116,7 +115,6 @@ a {
     text-align: center;
     color: #424c43;
     background-color: #edeef0;
-    height: 100%;
     width: 210px;
 }
 .info h3,
@@ -141,4 +139,10 @@ a {
     color: #FFF;
     text-align: center;
     margin-top: 5px;
+}
+.info,
+.news,
+.center {
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
