@@ -23,7 +23,6 @@ a {
     margin-left: 150px;
     width: 1000px;
     height: 990px;
-    background-color: #FFF;
 }
 .header {
     height: 175px;
@@ -99,16 +98,23 @@ a {
     display: block;
 }
 .content {
-    display: inline-block;
+    overflow: hidden;
     height: 545px;
-    width: 100%;
+    width: 1000px;
+}
+.center {
+    float:left;
+    width: 577px;
+    height: 100%;
+    background-color: #FFF;
 }
 .info,
 .news {
     text-align: center;
     color: #424c43;
     background-color: #edeef0;
-    height: 544px;
+    /*height: 544px;*/
+    height: 100%;
     width: 210px;
 }
 .info h3,
