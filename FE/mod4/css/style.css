@@ -105,16 +105,17 @@ a {
 }
 .center {
     float:left;
-    width: 577px;
+    width: 578px;
     height: 100%;
     background-color: #FFF;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
 }
 .info,
 .news {
     text-align: center;
     color: #424c43;
     background-color: #edeef0;
-    /*height: 544px;*/
     height: 100%;
     width: 210px;
 }
@@ -131,11 +132,10 @@ a {
 }
 .info {
     float:left;
-    border-right: 1px solid #c7cacf;
-}
+ }
 .news {
     float:right;
-    border-left: 1px solid #c7cacf;
+
 }
 .footer {
     color: #FFF;
