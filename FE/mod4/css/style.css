@@ -1,0 +1,137 @@
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+    font-size: 0;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 30px;
+    width: 100%
+}
+.container {
+    margin: 0 auto;
+    background-image: url("../img/background.png");
+    width: 1280px;
+    height: 1060px;
+}
+.window {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 150px;
+    width: 1000px;
+    height: 990px;
+    background-color: #FFF;
+}
+.header {
+    height: 175px;
+}
+.header,
+.menu{
+    width: 1000px;
+}
+.logo {
+    float:left;
+    margin-top: 9px;
+    margin-left: 25px;
+}
+.information {
+    margin-top: 8px;
+    height: 167px;
+    float:right;
+    color: #5FA5BB;
+}
+.information h4,
+.contacts {
+    margin-left: 100px;
+}
+.flag {
+    margin-right: 35px;
+    margin-top: 36px;
+}
+.flag li{
+    display: inline-block;
+}
+.photo {
+    height: 240px;
+}
+.photo img{
+    border-top: 1px solid   #128aa7;
+    border-bottom: 1px solid   #128aa7;
+}
+.menu{
+    height: 30px;
+    border-bottom: 1px solid #000;
+    background-color: #303030;
+}
+.menu ul li,
+.drop li{
+    line-height: 30px;
+    display: inline-block;
+}
+.menu ul li {
+    float: left;
+    height: 30px;
+    position: relative;
+    width: 141px;
+    z-index: 1;
+    background-color: #303030;
+    text-align: center;
+    color: #FFF;
+}
+.drop li:first-child{
+    border-top: 1px solid #000;
+}
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #303030;
+}
+.menu ul li ul li {
+    float:none;
+    display: block;
+    background-color: #303030;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+.content {
+    display: inline-block;
+    height: 545px;
+    width: 100%;
+}
+.info,
+.news {
+    text-align: center;
+    color: #424c43;
+    background-color: *#edeef0;
+    height: 545px;
+    width: 210px;
+}
+.info h3,
+.news h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.info ul li,
+.news ul li {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.info {
+    float:left;
+    border-right: 1px solid #c7cacf;
+}
+.news {
+    float:right;
+    border-left: 1px solid #c7cacf;
+}
+.footer {
+    color: #FFF;
+    text-align: center;
+    margin-top: 5px;
+}
