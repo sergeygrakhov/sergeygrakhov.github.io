@@ -104,7 +104,6 @@ a {
     width: 1000px;
 }
 .center {
-    float:left;
     width: 578px;
     background-color: #FFF;
     border-left: 1px solid #c7cacf;
@@ -128,13 +127,11 @@ a {
     margin-top: 6px;
     margin-bottom: 6px;
 }
-.info {
+.info,
+.news,
+.center{
     float:left;
  }
-.news {
-    float:left;
-
-}
 .footer {
     color: #FFF;
     text-align: center;
