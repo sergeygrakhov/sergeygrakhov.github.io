@@ -20,7 +20,21 @@
     height: 40px;
 }
 .menu ul {
-    margin-left: 465px;
+    margin-left: 370px;
+    float:left;
+}
+.log {
+    height: 30px;
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #3280c7;
+    color: #FFF;
+}
+.log a{
+    color: #FFF;
 }
 .menu ul li {
     padding-right: 10px;
@@ -33,6 +47,8 @@
     display: inline-block;
     text-decoration: none;
     color: #56a2dc;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .menu ul li:hover a {
     color: #FFF;
@@ -45,11 +61,14 @@
     left: -5px;
 }
 .flag {
-    padding-left: 20px;
-    border-left: 1px solid #56a2dc;
+     border-left: 1px solid #56a2dc;
 }
 .flag:hover a{
     color: #FFF;
+}
+.log a:hover{
+    color: #FFF;
+    text-decoration: none;
 }
 .menu ul li:last-child a {
     text-decoration: underline;
