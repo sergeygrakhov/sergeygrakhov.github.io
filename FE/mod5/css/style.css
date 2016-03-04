@@ -13,6 +13,7 @@
     width: 1215px;
     height: 1028px;
     background-image: url("../img/background.png");
+    margin:0 auto;
 }
 .menu {
     background-image: url("../img/menu-background.png");
@@ -20,7 +21,7 @@
     height: 40px;
 }
 .menu ul {
-    margin-left: 370px;
+    margin-left: 350px;
     float:left;
 }
 .log {
