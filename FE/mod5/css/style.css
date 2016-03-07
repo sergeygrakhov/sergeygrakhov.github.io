@@ -92,14 +92,14 @@ input {
     margin: 20px auto;
     display: block;
     height: 35px;
-    width: 275px;
+    width: 245px;
+    padding-left: 30px;
     border: 0;
     color: #FFF;
     background-color: #000;
 }
 ::-webkit-input-placeholder{
     color: #FFF;
-    padding-left: 30px;
 }
 input[type='checkbox'] {
     display: inline;
