@@ -8,29 +8,27 @@
     font-weight: normal;
     font-style: normal;
 }
+body {
+    background: url("../img/background.png") no-repeat top center #FFF;
+}
 .container {
     font-family: "texgyreheroscnregular", Arial, sans-serif ;
     width: 1215px;
-    height: 1028px;
-    background-image: url("../img/background.png");
     margin:0 auto;
 }
 .menu {
     background-image: url("../img/menu-background.png");
-    width: 100%;
     height: 40px;
 }
 .menu ul {
-    margin-left: 350px;
+    margin-left: 524px;
     float:left;
 }
 .log {
     height: 30px;
     display: inline-block;
     float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding: 10px 10px 0 10px;
     background-color: #3280c7;
     color: #FFF;
 }
@@ -38,8 +36,6 @@
     color: #FFF;
 }
 .menu ul li {
-    padding-right: 10px;
-    padding-left: 10px;
     display: inline-block;
     color: #56a2dc;
 }
@@ -48,8 +44,7 @@
     display: inline-block;
     text-decoration: none;
     color: #56a2dc;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding:0 10px;
 }
 .menu ul li:hover a {
     color: #FFF;
@@ -80,7 +75,6 @@
     }
 .header {
     height: 40px;
-    width: 100%;
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
@@ -89,10 +83,8 @@
     background-color: rgba(0,0,0, 0.5);
 }
 .login {
-    height: 510px;
-    width:100%;
     margin-top: 2px;
-    padding-top: 35px;
+    padding: 35px 0 20px;
     background-color: rgba(0,0,0, 0.5);
     text-align: center;
 }
