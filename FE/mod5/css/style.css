@@ -93,7 +93,8 @@ input {
     display: block;
     height: 35px;
     width: 275px;
-    border: 0px;
+    border: 0;
+    color: #FFF;
     background-color: #000;
 }
 ::-webkit-input-placeholder{
@@ -101,7 +102,6 @@ input {
     padding-left: 30px;
 }
 input[type='checkbox'] {
-    /*margin-top: 10px;*/
     display: inline;
     width: 10px;
     height: 10px;
