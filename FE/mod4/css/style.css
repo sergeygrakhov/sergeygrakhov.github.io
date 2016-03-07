@@ -1,3 +1,6 @@
+body {
+    background: url("../img/background.png") repeat-x top center #0C75A0;
+}
 .clearfix:after {
     content: " ";
     clear: both;
@@ -5,24 +8,22 @@
     font-size: 0;
 }
 a {
-    display: inline-block;
     text-decoration: none;
     color: #FFF;
-    line-height: 30px;
-    width: 100%
 }
-.container {
-    margin: 0 auto;
-    background-image: url("../img/background.png");
-    width: 1280px;
-    height: 1060px;
+.flag li div {
+    text-align: center;
+    width: 52px;
+}
+.flag li div a {
+    display: block;
+    color: #5FA5BB;
+    font-size: 10px;
+    text-decoration: underline;
 }
 .window {
-    position: absolute;
-    margin-top: 37px;
-    margin-left: 150px;
+    margin: 38px auto 0 auto;
     width: 1000px;
-    height: 990px;
 }
 .header {
     background-color: #FFF;
@@ -37,9 +38,12 @@ a {
     margin-top: 9px;
     margin-left: 25px;
 }
+.information div {
+  margin-right: -15px;
+
+}
 .information {
     margin-top: 8px;
-    height: 167px;
     float:right;
     color: #5FA5BB;
 }
@@ -51,8 +55,9 @@ a {
     margin-right: 35px;
     margin-top: 36px;
 }
-.flag li{
+.flag li {
     display: inline-block;
+    margin: 0 5px 0 5px;
 }
 .photo {
     height: 240px;
@@ -62,9 +67,7 @@ a {
     border-bottom: 1px solid   #128aa7;
 }
 .menu{
-    height: 30px;
     border-bottom: 1px solid #000;
-    background-color: #303030;
 }
 .menu ul li,
 .drop li{
@@ -80,6 +83,9 @@ a {
     background-color: #303030;
     text-align: center;
     color: #FFF;
+}
+#fix { /*что б подравнять ширину меню - более правильного не придумал */
+    width:154px;
 }
 .drop li:first-child{
     border-top: 1px solid #000;
@@ -98,9 +104,11 @@ a {
 .menu ul li:hover ul {
     display: block;
 }
+.drop  li:hover {
+text-decoration: underline;
+}
 .content {
     overflow: hidden;
-    height: 545px;
     width: 1000px;
 }
 .center {
