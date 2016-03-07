@@ -35,11 +35,10 @@ a {
 }
 .logo {
     float:left;
-    margin-top: 9px;
-    margin-left: 25px;
+    margin: 9px 0 0 25px;
 }
 .information div {
-  margin-right: -15px;
+    margin-right: -15px;
 
 }
 .information {
@@ -52,8 +51,7 @@ a {
     margin-left: 100px;
 }
 .flag {
-    margin-right: 35px;
-    margin-top: 36px;
+    margin: 36px 35px 0 0;
 }
 .flag li {
     display: inline-block;
@@ -84,9 +82,11 @@ a {
     text-align: center;
     color: #FFF;
 }
-#fix { /*что б подравнять ширину меню - более правильного не придумал */
+/*что б подравнять ширину меню - более правильного не придумал */
+#fix {
     width:154px;
 }
+/* */
 .drop li:first-child{
     border-top: 1px solid #000;
 }
@@ -126,14 +126,12 @@ text-decoration: underline;
 }
 .info h3,
 .news h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-weight: bold;
 }
 .info ul li,
 .news ul li {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin:6px 0;
 }
 .info,
 .news,
