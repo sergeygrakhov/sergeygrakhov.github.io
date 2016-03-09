@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework6</title>
+</head>
+<body>
+<div class="window">
+    <header>
+        <div class="phone">
+            <img src="img/tel-ico.png" alt="tel">
+            <p>(044)123-45-67 (044)567-89-10</p>
+        </div>
+        <form action="/">
+            <input type="text" name="login" id="login" placeholder="логин">
+            <input type="password" name="password" id="password" placeholder="пароль">
+            <input type="submit" value="вход">
+            <a href="#">Регистрация</a>
+            <a href="#">Забыли пароль?</a>
+        </form>
+        <div class="ico">
+            <a href="#"><img src="img/home-ico.png" alt="home"></a>
+            <a href="#"><img src="img/sitemap.png" alt="map"></a>
+            <a href="#"><img src="img/mail-ico.png" alt="mail"></a>
+        </div>
+    </header>
+    <img src="img/zazor.png" alt="banner" title="Zazor">
+    <div class="menu">
+        <ul>
+            <li><a href="#">О КОМПАНИ</a></li>
+            <li><a href="#">ОПЛАТА</a></li>
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li><a href="#">СТАТЬИ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+        <div class="korzina">
+            <p>товаров:<span>0</span> на сумму: <span>0.00 грн</span></p>
+        </div>
+    </div>
+    <div class="serch">
+        <form class="avto" id="first" action="/">
+        <header>
+            <span class="left">Диски:</span><span>Поиск по автомобилю</span><span class="right">Шины:</span>
+        </header>
+            <label for="marka">Марка <span class="gray">авто:</span></label>
+            <select form="first" id="marka">
+                <option value="skoda">Skoda</option>
+                <option value="ford">Ford</option>
+            </select>
+            <label for="marka2">Марка <span class="gray">авто:</span></label>
+            <select form="first" id="marka2">
+                <option value="skoda">Skoda</option>
+                <option value="ford">Ford</option>
+            </select>
+            <label for="model">Модель <span class="gray">автомобиля:</span></label>
+            <select form="first" id="model">
+                <option value="Nissan">Nissan</option>
+                <option value="VW">2001</option>
+            </select>
+            <label for="model2">Модель <span class="gray">автомобиля:</span></label>
+            <select form="first" id="model2">
+                <option value="Nissan">nissan</option>
+                <option value="VW">VW</option>
+            </select>
+            <label for="year">Модель <span class="gray">автомобиля:</span></label>
+            <select form="first" id="year">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+            </select>
+            <label for="year2">Модель <span class="gray">автомобиля:</span></label>
+            <select form="first" id="year2">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+            </select>
+            <label for="compl">Комплектация</label>
+            <select form="first" id="compl">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+            </select>
+            <label for="compl2">Комплектация</label>
+            <select form="first" id="compl2">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+            </select>
+            <input type="submit" value="поиск...">
+        </form>
+        <form class="tire" action="/" id="second">
+            <header>ПОИСК ШИН</header>
+            <label for="razmer">Размер</label>
+            <select form="second" id="razmer">
+                <option value="145">145</option>
+                <option value="146">146</option>
+            </select>
+            <label for="razmer2">/</label>
+            <select form="second" id="razmer2">
+                <option value="145">145</option>
+                <option value="146">146</option>
+            </select>
+            <span>Сезон:</span>
+            <input type="checkbox" name="sezom" id="summer">
+            <label for="summer">лето</label>
+            <input type="checkbox" name="sezon" id="winter">
+            <label for="winter">зима</label>
+            <input type="checkbox" name="sezon" id="allseasons">
+            <label for="allseasons">всесез</label>
+            <input type="submit" value="поиск...">
+        </form>
+        <form class="disc" action="/" id="third">
+            <div>
+                <header>ПОИСК ДИСКОВ</header>
+                <label for="diametr">Диаметр <span class="gray">диска:</span> </label>
+                <select form="third" id="diametr">
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+                <label for="kolvo">Количество <span class="gray">крепежных отверстий:</span></label>
+                <select form="third" id="kolvo">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="diametr-rasp">Количество <span class="gray">крепежных отверстий:</span></label>
+                <select form="third" id="diametr-rasp">
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+            </div>
+            <div>
+                <label for="dco">ДЦО<span class="gray">(диаметр центрального отверстия):</span></label>
+                <select form="third" id="dco">
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+                <label for="et">ЕТ<span class="gray">(вылет диска):</span></label>
+                <select form="third" id="et">
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+            </div>
+            <input type="submit" value="поиск...">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
