@@ -75,6 +75,7 @@ a {
 .menu ul li {
     float: left;
     height: 30px;
+    position: relative;
     width: 141px;
     z-index: 1;
     background-color: #303030;
