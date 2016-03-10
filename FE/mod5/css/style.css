@@ -27,7 +27,7 @@ body {
     margin:0 auto;
 }
 .menu {
-    background: url("../img/menu-background.png");
+    background: url("../img/menu-background.png"), repeat-x;
     height: 40px;
 }
 .menu ul li {
@@ -39,17 +39,17 @@ body {
     background-color: #3280c7;
     color: #FFF;
 }
-.log a{
-    color: #FFF;
-}
 .menu ul li {
     display: inline-block;
     color: #56a2dc;
 }
 .menu ul li:first-child {
     color: #FFF;
-
     padding-left:5px;
+}
+.leftside {
+    width: 965px;
+    margin: 0 auto;
 }
 .menu ul li a {
     line-height: 40px;
@@ -74,12 +74,12 @@ body {
 .flag:hover a{
     color: #FFF;
 }
-.log a:hover{
+.menu ul li:first-child:hover a{
+    text-decoration: underline;
     color: #FFF;
-    text-decoration: none;
 }
 .menu ul li:first-child a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 .forma {
     margin: 215px auto;
