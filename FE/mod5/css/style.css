@@ -24,6 +24,7 @@ body {
 }
 .container {
     width: 1215px;
+    margin:0 auto;
 }
 .menu {
     background: url("../img/menu-background.png");
