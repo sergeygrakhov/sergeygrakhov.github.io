@@ -11,15 +11,14 @@ a {
     text-decoration: none;
     color: #FFF;
 }
-.flag li div {
-    text-align: center;
-    width: 52px;
+.flag li {
+    display:inline-block;
 }
-.flag li div a {
-    display: block;
+.flag li a {
     color: #5FA5BB;
     font-size: 10px;
     text-decoration: underline;
+    text-align: center;
 }
 .window {
     margin: 38px auto 0 auto;
@@ -37,8 +36,8 @@ a {
     float:left;
     margin: 9px 0 0 25px;
 }
-.information div {
-    margin-right: -15px;
+.inf {
+    margin-left: 100px;
 
 }
 .information {
@@ -53,7 +52,7 @@ a {
 .flag {
     margin: 36px 35px 0 0;
 }
-.flag li {
+.flag li a{
     display: inline-block;
     margin: 0 5px 0 5px;
 }
@@ -141,7 +140,7 @@ text-decoration: underline;
 .footer {
     color: #FFF;
     text-align: center;
-    margin-top: 5px;
+    margin: 20px 0;
 }
 .info,
 .news,

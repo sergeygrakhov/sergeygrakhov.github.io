@@ -1,32 +1,98 @@
+@font-face {
+    font-family: 'lucida_sans_unicoderegular';
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot');
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'),
+    url('../fonts/lucida_sans_unicode_regular-webfont.woff') format('woff'),
+    url('../fonts/lucida_sans_unicode_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     width: 1000px;
     font-family: Arial, sans-serif;
+}
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+    font-size: 0;
+}
 }
 .window {
     margin: 0 auto;
     width: 910px;
 }
 header {
-    display: inline-block;
-    height: 24px;
-    margin-top: 18px;
+    margin: 23px 5px 8px;
+
 }
 header form {
+    float:left;
+    font-size:10px;
     display: inline-block;
+    width: 460px;
+    background-color: #1b5288;
+    border-radius: 5px;
+    height: 28px;
+    font-family: "lucida_sans_unicoderegular", Arial,sans-serif;
+}
+header input[type='text'],
+header input[type='password'] {
+    position: relative;
+    padding-left:4px;
+    top:-5px;
+    height:12px;
+    width: 111px;
+    margin-bottom: 5px;
+}
+header input[type='submit']{
+    position: relative;
+    top:-5px;
+    display:inline-block;
+    color:#ffffff;
+    font-size:10px;
+    padding:0 0;
+    text-decoration:none;
+    border: 0;
+    background-color: #1b5288;
+}
+.register {
+    position: relative;
+    top:-5px;
+    border-left: 1px solid white;
+    color:#ffffff;
+    font-size:10px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+.login img {
+    padding: 5px 0 0 5px;
+}
+.login a:last-child{
+    position: relative;
+    top:-5px;
+    display:inline-block;
+    color:gray;
+    font-size:11px;
+    text-decoration:underline;
+}
+.phone img,
+.phone p{
+    display: inline-block;
+    float:left;
 }
 .phone {
+    float:left;
     display: inline-block;
-    position: relative;
-}
-.phone img {
-    margin-left:5px;
+    width: 283px;
 }
 .phone p {
-    background-color: green;
-    width: 264px;
-    position: relative;
-    top: -3px;
-    left: 30px;
     font-size:18px;
     color: #878e91;
+}
+.ico {
+    float:left;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
