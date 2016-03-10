@@ -111,8 +111,14 @@ button:first-letter {
     font-size: 20px;
     font-weight: bold;
 }
-form:before {
-    content: url("../img/line.png");
+.line:before,
+.line:after{
+   content: url("../img/line.png");
+    position: relative;
+    top: -6px;
+}
+.line {
+    color: #999;
 }
 .login {
     margin-top: 2px;
