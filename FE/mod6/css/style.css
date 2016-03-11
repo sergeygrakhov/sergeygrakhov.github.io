@@ -96,3 +96,64 @@ header input[type='submit']{
     border: 1px solid gray;
     border-radius: 5px;
 }
+/*menushka pod kartinkou*/
+.menu {
+    background: #000;
+    border-radius: 5px;
+}
+.menu ul li{
+    display: inline-block;
+}
+/**/
+/*forms*/
+.avto,
+.tire,
+.disc {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: inline-block;
+}
+.avto {
+    width:300px;
+}
+.tire {
+    width:300px;
+}
+.disc {
+    width:300px;
+}
+/**/
+/*Katalog*/
+.content {
+    width: 800px;
+    overflow: hidden;
+}
+.leftColumn {
+    width: 200px;
+    float: left;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.centerColumn {
+    width: 400px;
+    float: left;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.rightColumn {
+    width: 200px;
+    float: left;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.tovar {
+    display: inline-block;
+}
+/**/
+/*footer*/
+.bottom {
+    background: #1b5288;
+}
+.bottom ul li {
+    display:inline-block;
+}
