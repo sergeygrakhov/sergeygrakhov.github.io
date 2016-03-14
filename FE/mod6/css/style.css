@@ -226,8 +226,8 @@ figure {
 .line:first-child {
     margin-top: 14px;
 }
-.line {
-    margin: 25px 0 0 20px;
+.line a:first-child {
+    margin-left: 20px;
 }
 .line a {
     margin-right: 26px;
