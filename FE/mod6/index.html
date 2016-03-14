@@ -40,7 +40,7 @@
             </li>
         </ul>
     </div>
-    <div class="serch">
+    <div class="serch clearfix">
         <form class="avto" id="first" action="/">
         <header>
             <span class="left">Диски:</span><span>Поиск по автомобилю</span><span class="right">Шины:</span>
@@ -142,11 +142,11 @@
             <input type="submit" value="поиск...">
         </form>
     </div>
-    <div class="content">
+    <div class="content clearfix">
         <div class="leftColumn">
             <h4>КАТАЛОГ ПРОДУКЦИИ</h4>
             <ul>
-                <li>ШИНЫ
+                <li><p class="category">ШИНЫ</p>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
@@ -154,7 +154,7 @@
                         <li><a href="#">Наименование 4</a></li>
                     </ul>
                 </li>
-                <li>ДИСКИ
+                <li><p class="category">ДИСКИ</p>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
@@ -162,7 +162,7 @@
                         <li><a href="#">Наименование 4</a></li>
                     </ul>
                 </li>
-                <li>БОЛТЫ
+                <li><p class="category">БОЛТЫ</p>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
@@ -246,19 +246,32 @@
         <div class="rightColumn">
             <form action="/" class="brand">
                 <h4>БРЕНДЫ</h4>
-                <input type="checkbox" name="tirebrand" id="tirebrand1"/>
-                <label for="tirebrand1">Бренд 1</label>
-                <input type="checkbox" name="tirebrand" id="tirebrand2"/>
-                <label for="tirebrand2">Бренд 2</label>
-                <input type="checkbox" name="tirebrand" id="tirebrand3"/>
-                <label for="tirebrand3">Бренд 3</label>
+                <h4>ШИНЫ</h4>
+                <div class="tovar-check">
+                    <input type="checkbox" name="tirebrand" id="tirebrand1"/>
+                    <label for="tirebrand1">Бренд 1</label>
+                </div>
+                <div class="tovar-check">
+                    <input type="checkbox" name="tirebrand" id="tirebrand2"/>
+                    <label for="tirebrand2">Бренд 2</label>
+                </div>
+                <div class="tovar-check">
+                    <input type="checkbox" name="tirebrand" id="tirebrand3"/>
+                    <label for="tirebrand3">Бренд 3</label>
+                </div>
                 <h4>ДИСКИ</h4>
-                <input type="checkbox" name="discbrand" id="discbrand1"/>
-                <label for="discbrand1">Бренд 1</label>
-                <input type="checkbox" name="discbrand" id="discbrand2"/>
-                <label for="discbrand2">Бренд 2</label>
-                <input type="checkbox" name="discbrand" id="discbrand3"/>
+                <div class="tovar-check">
+                    <input type="checkbox" name="discbrand" id="discbrand1"/>
+                    <label for="discbrand1">Бренд 1</label>
+                </div>
+                <div class="tovar-check">
+                    <input type="checkbox" name="discbrand" id="discbrand2"/>
+                    <label for="discbrand2">Бренд 2</label>
+                </div>
+                <div class="tovar-check">
+                    <input type="checkbox" name="discbrand" id="discbrand3"/>
                 <label for="discbrand3">Бренд 3</label>
+                    </div>
                 <input type="submit" value="ВЫБРАТЬ"/>
             </form>
         </div>

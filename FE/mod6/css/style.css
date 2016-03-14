@@ -127,6 +127,7 @@ header.top input[type='submit']{
 /*menushka pod kartinkou*/
 .menu {
     height: 35px;
+    margin-bottom: 12px;
     border: 1px solid #2c345a;
     border-radius: 5px;
     width: 906px;
@@ -176,6 +177,7 @@ content: url("../img/korzina-ico.png");
     border: 1px solid gray;
     border-radius: 5px;
     display: inline-block;
+    float:left;
 }
 .avto {
     width:412px;
@@ -189,35 +191,68 @@ content: url("../img/korzina-ico.png");
 /**/
 /*Katalog*/
 .content {
-    width: 800px;
+    margin-top: 13px;
+    width: 100%;
     overflow: hidden;
 }
 .leftColumn {
-    width: 200px;
+    width: 185px;
     float: left;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
 }
 .centerColumn {
-    width: 400px;
+    background-image: -ms-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
+    background-image: -moz-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
+    background-image: -o-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E3E6E7), color-stop(100, #93a7b0));
+    background-image: -webkit-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
+    background-image: linear-gradient(to bottom, #E3E6E7 0%, #93a7b0 100%);
+    width: 526px;
+    float: left;
+    border-radius: 3px ;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    text-align: center;
+}
+.brand h4:first-child:before,
+.leftColumn h4:before  {
+    content: url("../img/katalog-ico.png");
+}
+.brand h4:before,
+.category:before {
+    content: url("../img/round-ico.png");
+}
+.category,
+.leftColumn h4,
+.brand h4{
+    border: 1px solid #79878d;
+    border-radius: 10px;
+}
+.rightColumn {
+    width: 188px;
     float: left;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
 }
-.rightColumn {
-    width: 200px;
-    float: left;
-    padding-bottom: 20000px;
-    margin-bottom: -20000px;
+.tovar-check {
+    display: block;
 }
 .tovar {
     display: inline-block;
 }
 /**/
 /*footer*/
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
 .bottom {
     background: #1b5288;
+    margin-top: 15px;
+    height: 100px;
 }
 .bottom ul li {
     display:inline-block;
+    line-height: 35px;
 }
