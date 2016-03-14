@@ -69,7 +69,7 @@ header.top input[type='submit']{
     top:-5px;
     border-left: 1px solid white;
     color:#ffffff;
-    font-size: 10px;;
+    font-size: 9px;;
     padding-left: 5px;
     text-decoration: none;
 }
@@ -221,6 +221,18 @@ figure {
     margin-bottom: -20000px;
     text-align: center;
 }
+.line:first-child {
+    margin-top: 14px;
+}
+.line {
+    margin: 25px 0 0 20px;
+}
+.line a {
+    margin-right: 26px;
+}
+.line:last-child {
+    padding-bottom: 32px;
+}
 .line h4 {
     color: #206988;
     font-weight: bold;
@@ -229,6 +241,7 @@ figure {
     color: #000;
 }
 .line p:last-child {
+    margin-top: 6px;
     color: #114165;
     font-weight: bold;
 }
@@ -265,7 +278,7 @@ figure {
 .leftColumn ul li ul {
     list-style-type: disc;
 }
-.leftColumn:n ul li ul li{
+.leftColumn ul li ul li{
     padding-left: 20px;
     line-height: 22px;
 }
