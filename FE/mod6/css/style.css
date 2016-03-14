@@ -24,7 +24,6 @@ body {
      width: 100%;
 }
 header.top {
-    width:100%;
     margin: 23px 5px 8px;
 
 }
@@ -192,7 +191,6 @@ content: url("../img/korzina-ico.png");
 /*Katalog*/
 .content {
     margin-top: 13px;
-    width: 100%;
     overflow: hidden;
 }
 figure {
@@ -253,6 +251,8 @@ figure {
 .brand h4:first-child:before,
 .leftColumn h4:before  {
     content: url("../img/katalog-ico.png");
+    position: relative;
+    top: 4px;
 }
 .brand h4:before,
 .category:before {
@@ -261,8 +261,11 @@ figure {
 .category,
 .leftColumn h4,
 .brand h4{
+    position:relative;
     border: 1px solid #79878d;
     border-radius: 10px;
+    font-size: 14px;
+    color: #4a6680;
 }
 .rightColumn {
     width: 188px;
@@ -277,10 +280,31 @@ figure {
 .tovar {
     display: inline-block;
 }
-.leftColumn ul li ul {
-    list-style-type: disc;
+.spisok li a:before{
+    position: relative;
+    top:-2px;
+    right: 3px;
+    content: url("../img/disc.png");
 }
-.leftColumn ul li ul li{
+.spisok li a {
+    height: 22px;
+    padding-left: 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    color: #455961;
+}
+
+.spisok li a:hover:before {
+    content: url("../img/disc-hover.png");
+}
+.spisok li a:hover {
+    font-weight: bold;
+    font-style: italic ;
+    text-decoration: underline;
+    color: #0c3256;
+}
+.spisok li{
     padding-left: 20px;
     line-height: 22px;
 }
@@ -295,7 +319,13 @@ footer {
     margin-top: 15px;
     height: 100px;
 }
+.bottom ul {
+    padding-top: 10px;
+}
 .bottom ul li {
     display:inline-block;
-    line-height: 35px;
+    padding:0 10px;
+}
+.bottom ul li:nth-child(n+2) {
+    border-left: 1px solid #FFF;
 }
