@@ -195,6 +195,12 @@ content: url("../img/korzina-ico.png");
     width: 100%;
     overflow: hidden;
 }
+figure {
+    width: 138px;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: 1px solid #aeb7ba;
+}
 .leftColumn {
     width: 185px;
     float: left;
@@ -237,9 +243,17 @@ content: url("../img/korzina-ico.png");
 }
 .tovar-check {
     display: block;
+    height: 22px;
 }
 .tovar {
     display: inline-block;
+}
+.leftColumn ul li ul {
+    list-style-type: disc;
+}
+.leftColumn:n ul li ul li{
+    padding-left: 20px;
+    line-height: 22px;
 }
 /**/
 /*footer*/
