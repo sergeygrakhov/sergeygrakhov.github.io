@@ -69,7 +69,7 @@ header.top input[type='submit']{
     top:-5px;
     border-left: 1px solid white;
     color:#ffffff;
-    font-size:10px;
+    font-size: 10px;;
     padding-left: 5px;
     text-decoration: none;
 }
@@ -220,6 +220,20 @@ figure {
     padding-bottom: 20000px;
     margin-bottom: -20000px;
     text-align: center;
+}
+.line h4 {
+    color: #206988;
+    font-weight: bold;
+}
+.line  p {
+    color: #000;
+}
+.line p:last-child {
+    color: #114165;
+    font-weight: bold;
+}
+.line a {
+    text-decoration: none;
 }
 .brand h4:first-child:before,
 .leftColumn h4:before  {
