@@ -248,6 +248,10 @@ figure {
 .line a {
     text-decoration: none;
 }
+.brand h4:first-child,
+.leftColumn h4{
+    width: 180px;
+}
 .brand h4:first-child:before,
 .leftColumn h4:before  {
     content: url("../img/katalog-ico.png");
@@ -266,6 +270,12 @@ figure {
     border-radius: 10px;
     font-size: 14px;
     color: #4a6680;
+}
+.category {
+    width: 147px;
+}
+.rightColumn h4:nth-child(n+2) {
+    width: 134px;
 }
 .rightColumn {
     width: 188px;
