@@ -254,6 +254,10 @@ figure {
 .brand h4:first-child,
 .leftColumn h4{
     width: 180px;
+    margin-bottom: 12px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
 }
 .brand h4:first-child:before,
 .leftColumn h4:before  {
@@ -289,6 +293,13 @@ figure {
 .tovar-check {
     display: block;
     height: 22px;
+}
+.tovar-check,
+.brand h4:nth-child(n+2) {
+    margin-left: 15px;
+}
+.brand input[type='submit'] {
+    margin-left: 20px;
 }
 .tovar {
     display: inline-block;
