@@ -208,6 +208,8 @@ figure {
     margin-bottom: -20000px;
 }
 .centerColumn {
+    background-color:#E3E6E7;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#E3E6E7, endColorstr=#93a7b0);
     background-image: -ms-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
     background-image: -moz-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
     background-image: -o-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
