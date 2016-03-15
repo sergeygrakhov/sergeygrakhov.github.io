@@ -533,6 +533,7 @@ footer {
 .bottom ul li a {
     color: #FFF;
     text-decoration: none;
+    font-size: 12px;
 }
 .bottom ul li a:hover {
     color: #3b7790;
