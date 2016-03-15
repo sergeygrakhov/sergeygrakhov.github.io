@@ -40,104 +40,155 @@
             </li>
         </ul>
     </div>
-    <div class="serch clearfix">
+    <div class="search clearfix">
         <form class="avto" id="first" action="/">
         <header>
-            <span class="left">Диски:</span><span>Поиск по автомобилю</span><span class="right">Шины:</span>
+            <span class="left">Диски:</span><span class="center">Поиск по автомобилю</span><span class="right">Шины:</span>
         </header>
-            <label for="marka">Марка <span class="gray">авто:</span></label>
-            <select form="first" id="marka">
-                <option value="skoda">Skoda</option>
-                <option value="ford">Ford</option>
-            </select>
-            <label for="marka2">Марка <span class="gray">авто:</span></label>
-            <select form="first" id="marka2">
-                <option value="skoda">Skoda</option>
-                <option value="ford">Ford</option>
-            </select>
-            <label for="model">Модель <span class="gray">автомобиля:</span></label>
-            <select form="first" id="model">
-                <option value="Nissan">Nissan</option>
-                <option value="VW">2001</option>
-            </select>
-            <label for="model2">Модель <span class="gray">автомобиля:</span></label>
-            <select form="first" id="model2">
-                <option value="Nissan">nissan</option>
-                <option value="VW">VW</option>
-            </select>
-            <label for="year">Модель <span class="gray">автомобиля:</span></label>
-            <select form="first" id="year">
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-            </select>
-            <label for="year2">Модель <span class="gray">автомобиля:</span></label>
-            <select form="first" id="year2">
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-            </select>
-            <label for="compl">Комплектация</label>
-            <select form="first" id="compl">
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-            </select>
-            <label for="compl2">Комплектация</label>
-            <select form="first" id="compl2">
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-            </select>
+           <div class="block">
+               <div>
+                   <label for="marka">Марка <span class="gray">авто:</span></label>
+                   <select form="first" id="marka">
+                       <option value="skoda">Skoda</option>
+                       <option value="ford">Ford</option>
+                   </select>
+               </div>
+               <div>
+                   <label for="model">Модель <span class="gray">автомобиля:</span></label>
+                   <select form="first" id="model">
+                       <option value="Nissan">nissan</option>
+                       <option value="VW">VW</option>
+                   </select>
+               </div>
+               <div>
+                   <label for="year">Год выпуска <span class="gray">автомобиля:</span></label>
+                   <select form="first" id="year">
+                       <option value="2000">2000</option>
+                       <option value="2001">2001</option>
+                   </select>
+               </div>
+               <div>
+                   <label for="compl">Комплектация</label>
+                   <select form="first" id="compl">
+                       <option value="full">full</option>
+                       <option value="half">half</option>
+                   </select>
+               </div>
+           </div>
+            <div class="block">
+                <div>
+                    <label for="marka2">Марка <span class="gray">авто:</span></label>
+                    <select form="first" id="marka2">
+                        <option value="skoda">Skoda</option>
+                        <option value="ford">Ford</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="model2">Модель <span class="gray">автомобиля:</span></label>
+                    <select form="first" id="model2">
+                        <option value="Nissan">nissan</option>
+                        <option value="VW">VW</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="year2">Год выпуска <span class="gray">автомобиля:</span></label>
+                    <select form="first" id="year2">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="compl2">Комплектация</label>
+                    <select form="first" id="compl2">
+                        <option value="full">full</option>
+                        <option value="half">half</option>
+                    </select>
+                </div>
+            </div>
             <input type="submit" value="поиск...">
         </form>
         <form class="tire" action="/" id="second">
-            <header>ПОИСК ШИН</header>
-            <label for="razmer">Размер</label>
-            <select form="second" id="razmer">
-                <option value="145">145</option>
-                <option value="146">146</option>
-            </select>
-            <label for="razmer2">/</label>
-            <select form="second" id="razmer2">
-                <option value="145">145</option>
-                <option value="146">146</option>
-            </select>
-            <span>Сезон:</span>
-            <input type="checkbox" name="sezon" id="summer">
-            <label for="summer">лето</label>
-            <input type="checkbox" name="sezon" id="winter">
-            <label for="winter">зима</label>
-            <input type="checkbox" name="sezon" id="allseasons">
-            <label for="allseasons">всесез</label>
-            <input type="submit" value="поиск...">
-        </form>
-        <form class="disc" action="/" id="third">
+            <header class="zagolovok">ПОИСК ШИН</header>
             <div>
-                <header>ПОИСК ДИСКОВ</header>
-                <label for="diametr">Диаметр <span class="gray">диска:</span> </label>
-                <select form="third" id="diametr">
-                    <option value="14">14</option>
-                    <option value="15">15</option>
+                <label for="razmer">Размер</label>
+                <select form="second" id="razmer">
+                    <option value="145">145</option>
+                    <option value="146">146</option>
                 </select>
-                <label for="kolvo">Количество <span class="gray">крепежных отверстий:</span></label>
-                <select form="third" id="kolvo">
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                <label for="razmer2">/</label>
+                <select form="second" id="razmer2">
+                    <option value="145">145</option>
+                    <option value="146">146</option>
                 </select>
-                <label for="diametr-rasp">Количество <span class="gray">крепежных отверстий:</span></label>
-                <select form="third" id="diametr-rasp">
+            </div>
+            <div>
+                <label for="radius">R</label>
+                <select form="second" id="radius">
                     <option value="12">12</option>
                     <option value="13">13</option>
                 </select>
             </div>
             <div>
-                <label for="dco">ДЦО<span class="gray">(диаметр центрального отверстия):</span></label>
+                <div class="seredka">
+                    <span>Сезон:</span>
+                </div>
+                <div class="seredka">
+                        <div class="zimaleto">
+                            <input type="checkbox" name="sezon" id="summer">
+                            <label for="summer">лето</label>
+                        </div>
+                        <div class="zimaleto">
+                            <input type="checkbox" name="sezon" id="winter">
+                            <label for="winter">зима</label>
+                        </div>
+                        <div class="zimaleto">
+                            <input type="checkbox" name="sezon" id="allseasons">
+                            <label for="allseasons">всесез</label>
+                        </div>
+                    </div>
+            </div>
+            <input type="submit" value="поиск...">
+        </form>
+        <form class="disc" action="/" id="third">
+            <div class="leftdisc">
+                <header class="zagolovok">ПОИСК ДИСКОВ</header>
+                <div class="podgonka">
+                    <label for="diametr">Диаметр <span class="gray">диска:</span> </label>
+                    <select form="third" id="diametr">
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+                <div class="podgonka">
+                    <label for="kolvo">Количество <span class="gray">крепежных отверстий:</span></label>
+                    <select form="third" id="kolvo">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="podgonka">
+                    <label for="diametr-rasp">Диаметр <span class="gray">расположения крепежных отверстий:</span></label>
+                    <select form="third" id="diametr-rasp">
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                </select>
+                </div>
+            </div>
+            <div class="rightdisc">
+                <div>
+                <label for="dco">ДЦО<span class="gray discgray">(диаметр центрального отверстия):</span></label>
                 <select form="third" id="dco">
                     <option value="12">12</option>
                     <option value="13">13</option>
                 </select>
-                <label for="et">ЕТ<span class="gray">(вылет диска):</span></label>
+                </div>
+                <div>
+                <label for="et">ЕТ<span class="gray discgray">(вылет диска):</span></label>
                 <select form="third" id="et">
                     <option value="12">12</option>
                     <option value="13">13</option>
                 </select>
+                </div>
             </div>
             <input type="submit" value="поиск...">
         </form>
@@ -173,23 +224,24 @@
             </ul>
         </div>
         <div class="centerColumn">
+            <div class="gradient">
             <div class="line">
                 <a href="#" class="tovar">
                     <h4>Goodyear</h4>
                     <p>Ultra Grip Extreme</p>
-                    <figure><img src="img/tire1.png"></figure>
+                    <figure><img src="img/tire1.png" alt="tire"></figure>
                     <p>90.00 грн</p>
                 </a>
                 <a href="#" class="tovar">
                     <h4>Nokian</h4>
                     <p>Hakkapelita R</p>
-                    <figure><img src="img/tire2.png"></figure>
+                    <figure><img src="img/tire2.png" alt="tire"></figure>
                     <p>115.00 грн</p>
                 </a>
                 <a href="#" class="tovar">
                     <h4>Hankook</h4>
                     <p>K 708 155/65 R14</p>
-                    <figure><img src="img/tire3.png"></figure>
+                    <figure><img src="img/tire3.png" alt="tire"></figure>
                     <p>393.00 грн</p>
                 </a>
             </div>
@@ -197,19 +249,19 @@
                 <a href="#" class="tovar">
                     <h4>Goodyear</h4>
                     <p>Ultra Grip Extreme</p>
-                    <figure><img src="img/tire1.png"></figure>
+                    <figure><img src="img/tire1.png" alt="tire"></figure>
                     <p>90.00 грн</p>
                 </a>
                 <a href="#" class="tovar">
                     <h4>Nokian</h4>
                     <p>Hakkapelita R</p>
-                    <figure><img src="img/tire2.png"></figure>
+                    <figure><img src="img/tire2.png" alt="tire"></figure>
                     <p>115.00 грн</p>
                 </a>
                 <a href="#" class="tovar">
                     <h4>Hankook</h4>
                     <p>K 708 155/65 R14</p>
-                    <figure><img src="img/tire3.png"></figure>
+                    <figure><img src="img/tire3.png" alt="tire"></figure>
                     <p>393.00 грн</p>
                 </a>
             </div>
@@ -217,21 +269,22 @@
                 <a href="#" class="tovar">
                     <h4>Goodyear</h4>
                     <p>Ultra Grip Extreme</p>
-                    <figure><img src="img/tire1.png"></figure>
+                    <figure><img src="img/tire1.png" alt="tire"></figure>
                     <p>90.00 грн</p>
                 </a>
                 <a href="#" class="tovar">
                     <h4>Nokian</h4>
                     <p>Hakkapelita R</p>
-                    <figure><img src="img/tire2.png"></figure>
+                    <figure><img src="img/tire2.png" alt="tire"></figure>
                     <p>115.00 грн</p>
                 </a>
                 <a href="#" class="tovar">
                     <h4>Hankook</h4>
                     <p>K 708 155/65 R14</p>
-                    <figure><img src="img/tire3.png"></figure>
+                    <figure><img src="img/tire3.png" alt="tire"></figure>
                     <p>393.00 грн</p>
                 </a>
+            </div>
             </div>
         </div>
         <div class="rightColumn">

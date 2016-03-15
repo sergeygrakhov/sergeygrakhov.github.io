@@ -19,7 +19,7 @@ body {
     display: block;
     font-size: 0;
 }
-}
+
 .window {
      width: 100%;
 }
@@ -38,9 +38,9 @@ header.top {
     border-radius: 5px;
     height: 28px;
     font-family: "lucida_sans_unicoderegular", Arial, sans-serif;
-    -webkit-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
 }
 header.top input[type='text'],
 header.top input[type='password'] {
@@ -123,6 +123,186 @@ header.top input[type='submit']{
 .zazor {
     margin: -4px 0 0 -2px;
 }
+/*FORMS*/
+.avto,
+.tire,
+.disc {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    float:left;
+    height: 135px;
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(199,199,199,1);
+    -moz-box-shadow: 1px 1px 2px 2px rgba(199,199,199,1);
+    box-shadow: 1px 1px 2px 2px rgba(199,199,199,1);
+}
+.avto {
+    width:412px;
+}
+.tire {
+    width:190px;
+}
+.disc {
+    width: 264px;
+}
+.search input[type='submit']{
+    text-decoration: underline;
+    display: inline-block;
+    color: #154467;
+    background-color: #FFF;
+    border: none;
+    font-style: italic;
+}
+.avto input[type='submit'] {
+    position: relative;
+    left: 337px;
+}
+.block {
+    display: inline-block;
+}
+.avto header span,
+.tire header,
+.disc header{
+    color: #154467;
+    font-weight: bold;
+    font-size: 12px;
+}
+.avto {
+    padding-left: 10px;
+}
+.block div:first-child {
+    margin-right: 25px;
+}
+.avto header {
+    margin-bottom: 5px;
+}
+.avto,
+.tire {
+    margin-right: 13px;
+}
+.avto label {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 70px;
+}
+.left,
+.right {
+    font-size: 10px;
+}
+.center {
+    position: relative;
+    font-size: 12px;
+    left: 90px;
+}
+.left {
+    position: relative;
+    left: 9px;
+}
+.right {
+    position: relative;
+    left: 180px;
+}
+select[id=marka],
+select[id=marka2],
+select[id=model],
+select[id=model2],
+select[id=compl],
+select[id=compl2] {
+    width: 100px;
+}
+.block div {
+    margin-top: 3px;
+}
+label,
+.tire span{
+    color: #000;
+    font-size: 10px;
+}
+.gray {
+    color: #77858b;
+    font-size: 8px;
+}
+.seredka:first-child {
+    position: relative;
+    top:-40px;
+}
+.seredka {
+    display: inline-block;
+}
+.zimaleto {
+    display: block;
+}
+.tire header {
+    position: relative;
+    left: 5px;
+    margin-bottom: 5px;
+}
+label[for=radius] {
+    margin:3px 0 0 27px;
+}
+.tire > div {
+    margin-left: 10px;
+}
+select[id=razmer],
+select[id=razmer2] {
+    width: 50px;
+    margin-bottom: 3px;
+}
+.tire input[type=submit] {
+    position: relative;
+    left: 128px;
+    top: 2px;
+}
+.disc input[type='submit'] {
+    position: relative;
+    top: -56px;
+    left: 107px;
+}
+.leftdisc span.gray {
+    display: inline-block;
+}
+.leftdisc div {
+    margin-left: 5px;
+}
+.leftdisc .zagolovok {
+    position: relative;
+    top: 1px;
+    left: 5px;
+}
+.podgonka {
+    margin-top: 5px;
+}
+.podgonka label {
+    display: inline-block;
+    width: 90px;
+}
+span.discgray {
+    display: block;
+}
+.disc {
+    position: relative;
+    margin-bottom: 5px;
+}
+.leftdisc {
+    display: inline-block;
+    margin-top: 4px;;
+}
+.leftdisc {
+    width: 170px;
+    border-right: 1px solid #bdc6ca;
+}
+.rightdisc {
+    position: relative;
+    display: inline-block;
+    top: -96px;
+    left: 176px;
+    width: 88px;
+}
+.rightdisc select {
+    width: 55px;
+}
+/**/
 /*menushka pod kartinkou*/
 .menu {
     height: 35px;
@@ -131,11 +311,10 @@ header.top input[type='submit']{
     border-radius: 5px;
     width: 906px;
     background-color:#505860;
-    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#505860, endColorstr=#010101);
     background-image:-moz-linear-gradient(top, #505860 0%, #010101 100%);
     background-image:-webkit-linear-gradient(top, #505860 0%, #010101 100%);
     background-image:-ms-linear-gradient(top, #505860 0%, #010101 100%);
-    background-image:linear-gradient(top, #505860 0%, #010101 100%);
+    background-image:linear-gradient(#505860 0%, #010101 100%);
     background-image:-o-linear-gradient(top, #505860 0%, #010101 100%);
     background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#505860), color-stop(100%,#010101));
 }
@@ -169,25 +348,7 @@ content: url("../img/korzina-ico.png");
     color: #104c78;
 }
 /**/
-/*forms*/
-.avto,
-.tire,
-.disc {
-    border: 1px solid gray;
-    border-radius: 5px;
-    display: inline-block;
-    float:left;
-}
-.avto {
-    width:412px;
-}
-.tire {
-    width:190px;
-}
-.disc {
-    width:264px;
-}
-/**/
+
 /*Katalog*/
 .content {
     margin-top: 13px;
@@ -204,22 +365,26 @@ figure {
     float: left;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
+    margin-right: 5px;
 }
 .centerColumn {
-    background-color:#E3E6E7;
-    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#E3E6E7, endColorstr=#93a7b0);
-    background-image: -ms-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
-    background-image: -moz-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
-    background-image: -o-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E3E6E7), color-stop(100, #93a7b0));
-    background-image: -webkit-linear-gradient(top, #E3E6E7 0%, #93a7b0 100%);
-    background-image: linear-gradient(to bottom, #E3E6E7 0%, #93a7b0 100%);
     width: 526px;
     float: left;
-    border-radius: 3px ;
     padding-bottom: 20000px;
-    margin-bottom: -20000px;
     text-align: center;
+    margin-bottom: -20000px;
+}
+.gradient {
+    background-color: #e4e7e8;
+    background-image:-moz-linear-gradient(top, #e4e7e8 0%, #94a7b1 100%);
+    background-image:-webkit-linear-gradient(top, #e4e7e8 0%, #94a7b1 100%);
+    background-image:-ms-linear-gradient(top, #e4e7e8 0%, #94a7b1 100%);
+    background-image:linear-gradient(#e4e7e8 0%, #94a7b1 100%);
+    background-image:-o-linear-gradient(top, #e4e7e8 0%, #94a7b1 100%);
+    background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#e4e7e8), color-stop(100%,#94a7b1));
+    margin-top: 5px;
+    border-radius: 3px;
+    padding-top: 13px
 }
 .line {
     margin-top: 24px;
@@ -265,6 +430,16 @@ figure {
     position: relative;
     top: 4px;
 }
+.brand input[type=submit] {
+    color: #FFF;
+    border: none;
+    background-color: #1e6383;
+    height: 24px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
+}
 .brand h4:before,
 .category:before {
     content: url("../img/round-ico.png");
@@ -289,6 +464,7 @@ figure {
     float: left;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
+    margin-left: 5px;
 }
 .tovar-check {
     display: block;
