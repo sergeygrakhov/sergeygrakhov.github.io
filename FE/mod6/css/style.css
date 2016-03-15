@@ -240,7 +240,7 @@ label,
     margin-bottom: 5px;
 }
 label[for=radius] {
-    margin:3px 0 0 27px;
+    margin:3px 2px 0 27px;
 }
 .tire > div {
     margin-left: 10px;
@@ -349,7 +349,6 @@ content: url("../img/korzina-ico.png");
     color: #104c78;
 }
 /**/
-
 /*Katalog*/
 .content {
     margin-top: 13px;
@@ -419,17 +418,27 @@ figure {
 }
 .brand h4:first-child,
 .leftColumn h4{
+    line-height: 24px;
+    vertical-align: bottom;
     width: 180px;
     margin-bottom: 12px;
     -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
 }
+.dvigaem {
+    position: relative;
+    top: -2px;
+}
+.dvigaem2 {
+    position: relative;
+    top:-5px;
+}
 .brand h4:first-child:before,
 .leftColumn h4:before  {
     content: url("../img/katalog-ico.png");
     position: relative;
-    top: 4px;
+    top: 3px;
 }
 .brand input[type=submit] {
     color: #FFF;
