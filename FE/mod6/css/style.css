@@ -33,20 +33,22 @@ header.top {
     float:left;
     font-size:10px;
     display: inline-block;
-    width: 492px;
-    background-color: #1b5288;
+    width: 466px;
     border-radius: 5px;
     height: 28px;
     font-family: "lucida_sans_unicoderegular", Arial, sans-serif;
     -webkit-box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
     box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
+    background: url("../img/login-ico.png") no-repeat left #1b5288;
+    padding: 0 0 0 22px;
+    background-position: 3px 4px;
 }
 header.top input[type='text'],
 header.top input[type='password'] {
     position: relative;
     padding-left:4px;
-    top:-5px;
+    top: 4px;
     height:12px;
     width: 109px;
     margin-bottom: 5px;
@@ -54,7 +56,7 @@ header.top input[type='password'] {
 }
 header.top input[type='submit']{
     position: relative;
-    top:-5px;
+    top: 4px;
     display:inline-block;
     color:#ffffff;
     font-size:10px;
@@ -65,26 +67,22 @@ header.top input[type='submit']{
 }
 .register {
     position: relative;
-    top:-5px;
+    top: 4px;
     border-left: 1px solid white;
     color:#ffffff;
     font-size: 9px;;
     padding-left: 5px;
     text-decoration: none;
 }
-.login img {
-    padding: 5px 0 0 5px;
-}
 .login a:last-child{
     position: relative;
-    top:-5px;
+    top: 4px;
     left: 29px;
     display:inline-block;
     color:gray;
     font-size:11px;
     text-decoration:underline;
 }
-.phone img,
 .phone p{
     display: inline-block;
     float:left;
@@ -95,11 +93,13 @@ header.top input[type='submit']{
     width: 309px;
 }
 .phone p {
+    height: 21px;
     font-size:18px;
     color: #878e91;
     letter-spacing: 0.35px;
     margin-left: 4px;
-
+    background: url("../img/tel-ico.png") no-repeat left;
+    padding: 0 0 0 22px;
 }
 .ico {
     float:left;
