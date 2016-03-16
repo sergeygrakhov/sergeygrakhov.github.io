@@ -79,9 +79,12 @@ header.top input[type='submit']{
     top: 4px;
     left: 29px;
     display:inline-block;
-    color:gray;
+    color:#FFF;
     font-size:11px;
     text-decoration:underline;
+}
+.login a:last-child:hover {
+    color: grey;
 }
 .phone p{
     float:left;
@@ -103,7 +106,7 @@ header.top input[type='submit']{
     float:left;
     position:relative;
     top:-5px;
-    height: 20px;
+    line-height: 20px;
     border: 1px solid gray;
     border-radius: 9px;
     margin-left: 20px;
@@ -122,6 +125,9 @@ header.top input[type='submit']{
     margin: -4px 0 0 -2px;
 }
 /*FORMS*/
+.poisk {
+    margin-top: 3px;
+}
 .avto,
 .tire,
 .disc {
@@ -158,12 +164,15 @@ header.top input[type='submit']{
 .block {
     display: inline-block;
 }
-.avto header span,
-.tire header,
-.disc header{
+.avto .header span,
+.zagolovok {
     color: #154467;
     font-weight: bold;
     font-size: 12px;
+}
+.tire .zagolovok {
+    position: relative;
+    top: 2px;
 }
 .avto {
     padding-left: 10px;
@@ -171,7 +180,7 @@ header.top input[type='submit']{
 .block div:first-child {
     margin-right: 25px;
 }
-.avto header {
+.avto .header {
     margin-bottom: 5px;
 }
 .avto,
@@ -231,7 +240,7 @@ label,
 .zimaleto {
     display: block;
 }
-.tire header {
+.tire .header {
     position: relative;
     top: 3px;
     left: 5px;
@@ -251,7 +260,7 @@ select[id=razmer2] {
 .tire input[type=submit] {
     position: relative;
     left: 128px;
-    top: 2px;
+    top: -2px;
 }
 .disc input[type='submit'] {
     position: relative;
@@ -341,6 +350,10 @@ span.discgray {
 content: url("../img/korzina-ico.png");
  }
 .korzina {
+    position: relative;
+    top: -24px;
+    left: 700px;
+    font-size: 12px;
     color: #b1bcc0;
 }
 .korzina p span{
@@ -384,34 +397,31 @@ figure {
     border-radius: 3px;
     padding-top: 13px
 }
-.line {
-    margin-top: 24px;
-}
-.line:first-child {
+.gradient:first-child {
     margin-top: 14px;
 }
-.line a:first-child {
+.gradient .sleva {
     margin-left: 20px;
 }
-.line a {
+.gradient a {
     margin-right: 25px;
 }
-.line:last-child {
-    padding-bottom: 32px;
+.gradient:last-child {
+    padding-bottom: 20px;
 }
-.line h4 {
+.gradient h4 {
     color: #206988;
     font-weight: bold;
 }
-.line  p {
+.gradient  p {
     color: #000;
 }
-.line p:last-child {
-    margin-top: 6px;
+.gradient p:last-child {
+    margin: 6px 0 15px 0;
     color: #114165;
     font-weight: bold;
 }
-.line a {
+.gradient a {
     text-decoration: none;
 }
 .brand h4:first-child,
