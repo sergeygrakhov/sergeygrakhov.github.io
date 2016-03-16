@@ -158,10 +158,11 @@ header.top input[type='submit']:hover{
     background-color: #FFF;
     border: none;
     font-style: italic;
+    float:right;
 }
 .avto input[type='submit'] {
     position: relative;
-    left: 337px;
+    margin-right: 5px;
 }
 .block {
     display: inline-block;
@@ -261,13 +262,13 @@ select[id=razmer2] {
 }
 .tire input[type=submit] {
     position: relative;
-    left: 128px;
+    margin-right:5px;
     top: -2px;
 }
 .disc input[type='submit'] {
     position: relative;
     top: 15px;
-    left: 200px;
+    margin-right:5px;
 }
 .leftdisc span.gray {
     display: inline-block;
