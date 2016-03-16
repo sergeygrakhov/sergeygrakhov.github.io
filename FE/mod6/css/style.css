@@ -9,8 +9,7 @@
     font-style: normal;
 }
 body {
-    margin:0 auto;
-    width: 910px;
+
     font-family: Arial, sans-serif;
 }
 .clearfix:after {
@@ -21,7 +20,8 @@ body {
 }
 
 .window {
-     width: 100%;
+    margin:0 auto;
+    width: 910px;
 }
 header.top {
     margin: 23px 5px 8px;
@@ -84,12 +84,10 @@ header.top input[type='submit']{
     text-decoration:underline;
 }
 .phone p{
-    display: inline-block;
     float:left;
 }
 .phone {
     float:left;
-    display: inline-block;
     width: 309px;
 }
 .phone p {
