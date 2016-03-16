@@ -350,11 +350,12 @@ span.discgray {
 content: url("../img/korzina-ico.png");
  }
 .korzina {
+    float: right;
     position: relative;
     top: -24px;
-    left: 700px;
     font-size: 12px;
     color: #b1bcc0;
+    padding-right: 5px;
 }
 .korzina p span{
     color: #104c78;
