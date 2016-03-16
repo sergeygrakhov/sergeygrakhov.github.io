@@ -83,7 +83,9 @@ header.top input[type='submit']{
     font-size:11px;
     text-decoration:underline;
 }
-.login a:last-child:hover {
+.login a:last-child:hover,
+.register:hover,
+header.top input[type='submit']:hover{
     color: grey;
 }
 .phone p{
