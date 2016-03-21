@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="superheader">
         <header class="header clearfix">
             <p class="header__logo">PINGBULL<span class="header__logo__color">ER</span></p>
             <ul class="drop-menu"><!--for 480p-->
@@ -41,29 +42,24 @@
                 felis aliquam a tempus lectus lobortis.</span></p>
             </div>
             <div class="slider__item">
-                <img src="img/iphone.png" alt="iphone"/>
+                <img class="slider__image" src="img/iphone.png" alt="iphone"/>
             </div>
-            <div class="slider__item480">
-                <img src="img/iphone480.png" alt="iphone"/>
-            </div>
+        </div>
         </div>
         <div class="about clearfix">
             <section class="about__item">
-                <div class="about__sprite"></div>
                 <h4 class="about__title">ABOUT OUR COMPANY</h4>
                 <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus <span class="hideabout">ultrices posuere. Pellentesque vel</span><span class="hide">lacus eget nisi convallis auctor. Nam</span></p>
                 <a href="#" class="about__link">READ MORE</a>
             </section>
             <section class="about__item">
-                <div class="about__sprite"></div>
                 <h4 class="about__title">ABOUT OUR COMPANY</h4>
                 <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus <span class="hideabout">ultrices posuere. Pellentesque vel</span><span class="hide">lacus eget nisi convallis auctor. Nam</span></p>
                 <a href="#" class="about__link">READ MORE</a>
             </section>
             <section class="about__item">
-                <div class="about__sprite"></div>
                 <h4 class="about__title">ABOUT OUR COMPANY</h4>
                 <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus <span class="hideabout">ultrices posuere. Pellentesque vel</span><span class="hide">lacus eget nisi convallis auctor. Nam</span></p>
@@ -72,7 +68,7 @@
         </div>
         <div class="testimonial clearfix">
             <div class="testimonial__item">
-                <div class="testimonial__sprite"></div>
+                <img class="testimonial__sprite" src="img/man.png" alt="user">
                 <h4 class="testimonial__title">PINGBULLER <span class="testimonial__color">STARTS HERE</span></h4>
                 <p class="testimonial__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
@@ -82,17 +78,17 @@
             <div class="testimonial__item">
                 <h4 class="testimonial__title">RECENT UPDATES</h4>
                 <div class="testimonial__update">
-                    <div class="testimonial__sprite"></div>
+                    <img class="testimonial__sprite" src="img/bubble1.png" alt="user">
                     <h4 class="testimonial__update__title">Nunc turpis neque<span class="hideabout"> feugiat eget</span></h4>
                     <p class="testimonial__update__text">Posted by Admin on March 13<span class="hideabout">  2012 </span><span class="hide">in Recent News</span></p>
                     </div>
                 <div class="testimonial__update">
-                    <div class="testimonial__sprite"></div>
+                    <img class="testimonial__sprite" src="img/bubble2.png" alt="user">
                     <h4 class="testimonial__update__title">Nunc turpis neque<span class="hideabout"> feugiat eget</span></h4>
                     <p class="testimonial__update__text">Posted by Admin on March 13<span class="hideabout">  2012 </span><span class="hide">in Category</span></p>
                 </div>
                 <div class="testimonial__update">
-                    <div class="testimonial__sprite"></div>
+                    <img class="testimonial__sprite" src="img/bubble3.png" alt="user">
                     <h4 class="testimonial__update__title">Nunc turpis neque<span class="hideabout"> feugiat eget</span></h4>
                     <p class="testimonial__update__text">Posted by Admin on March 13<span class="hideabout">  2012 </span><span class="hide">in Blog Updates</span></p>
                 </div>
@@ -100,10 +96,14 @@
                 <a href="#" class="testimonial__link768">MORE BLOG POSTS</a>
             </div>
         </div>
-        <figure class="brands"><img src="img/logos.png" alt="brands"/></figure>
-        <figure class="brands768"><img src="img/logos768.png" alt="brands"/></figure>
-        <figure class="brands480"><img src="img/logos480.png" alt="brands"/></figure>
-        <figure class="brands320"><img src="img/logos320.png" alt="brands"/></figure>
+        <ul class="brands">
+            <li class="brands__image"><img src="img/logo1.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo2.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo3.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo4.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo5.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo6.png" alt="brand"/></li>
+        </ul>
         <div class="news clearfix">
             <div class="news__item">
                 <h4 class="news__title">PIGBULL<span class="news__color">ER</span></h4>
@@ -126,26 +126,6 @@
                     vitae lectus eu libero pellentesque pul- vinar. Quisque urna risus, mattis pulvi- nar bibendum in,
                     venenatis quis</p>
             </div>
-        </div>
-        <div class="news768 clearfix">
-            <section class="news__item">
-                <h4 class="news__title">NEWS CATEGORIES</h4>
-                <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
-                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
-                    vitae lectus eu libero pellentesque</p>
-            </section>
-            <section class="news__item">
-                <h4 class="news__title">NEWS CATEGORIES</h4>
-                <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
-                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
-                    vitae lectus eu libero pellentesque</p>
-            </section>
-            <section class="news__item">
-                <h4 class="news__title">NEWS CATEGORIES</h4>
-                <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
-                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
-                    vitae lectus eu libero pellentesque</p>
-            </section>
         </div>
         <footer class="bottom clearfix">
             <ul class="bottommenu">
