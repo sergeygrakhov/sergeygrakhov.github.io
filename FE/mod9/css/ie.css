@@ -181,7 +181,10 @@ body {
     width: 450px;
     height: 300px;
     background: #FFF;
-    margin:0 60px 0 0;
+    margin:0 10px 0 0;
+}
+.testimonial__item {
+    display:inline-block ;
 }
 .testimonial__item:first-child > .testimonial__title,
 .testimonial__item:first-child > .testimonial__text {
@@ -214,6 +217,7 @@ body {
     margin: 0 0 24px 0;
 }
 .testimonial__sprite {
+    display: inline-block;
     position: absolute;
     overflow: hidden;
     background: url("../img/sprite2.png") -48px 0 no-repeat;
