@@ -1197,11 +1197,7 @@ body {
 }
 body {
     background:
-    url('../img/background.jpg') no-repeat top center,
-    url('../img/background-line.jpg') repeat-x left 846px,
-    url('../img/background-dot.jpg') repeat-x left 1674px,
-    url('../img/background-line2.jpg')repeat-x left 1795px,
-    url('../img/bottom.jpg')no-repeat bottom center #F9F9F9;
+    url('../img/back-ie.jpg') no-repeat top center #F9F9F9;
 }
 .wrapper {
     width: 960px;
