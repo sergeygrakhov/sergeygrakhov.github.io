@@ -1185,7 +1185,7 @@
     }
     .testimonial__item:first-child >.testimonial__sprite {
         top: 1274px;
-        left: 24;
+        left: 24px;
     }
     .testimonial__link768 {
         text-decoration: none;
