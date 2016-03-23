@@ -1104,12 +1104,12 @@
         background-size: cover;
     }
     .designed {
-        float: right;
+        padding: 0 0 100px 0;
         color: #FFF;
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
         font-size: 12px;
         font-family: 'open_sanslight', Arial, sans-serif;
-        margin: -18px 91px 121px 0;
+        text-align: center;
     }
     .designed__color {
         font-family: 'open_sansextrabold', Arial, sans-serif;
