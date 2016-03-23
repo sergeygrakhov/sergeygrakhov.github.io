@@ -856,7 +856,6 @@
         font-size: 16px;
         font-family: 'open_sanslight', Arial, sans-serif;
         line-height: 23px;
-        width: 400px;
     }
     /*footer*/
     .bottom {
@@ -868,8 +867,9 @@
         background-size: cover;
     }
     .bottommenu {
-        float: left;
-        margin: 9px 0 0 30px;
+        /*float: left;*/
+        margin:0 10px;
+        text-align: center;
     }
     .bottommenu__item {
         display: inline-block;
@@ -880,7 +880,9 @@
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
         text-decoration: none;
         font-size: 20px;
-        margin: 0 21px 0 0;
+    }
+    .bottommenu__item:nth-child(n+2):nth-child(-n+5) .bottommenu__link {
+        margin:0 10px;
     }
     .bottommenu__link:hover {
         text-decoration: underline;
@@ -1152,11 +1154,10 @@ body {
     margin-top: 0;
     width: 250px;
     border: 1px solid #051116;
-    border-radius: 10px;
-    background: rgba(54, 41, 62, 0.8);
+    background: rgba(54, 41, 62, 0.3);
 }
 .navi {
-    top: 161px;
+    top: 162px;
     position: absolute;
 }
 .dropdown-menu {
@@ -1164,9 +1165,26 @@ body {
     margin: auto;
 
 }
+.dropdown-menu__select > .dropdown__link {
+    border-radius: 10px;
+}
+.dropdown-menu:hover .dropdown-menu__select > .dropdown__link {
+    border-radius: 10px 10px 0 0;
+}
+.dropdown-menu:hover .dropdown__item:last-child,
+.dropdown-menu:hover .dropdown__item:last-child > .dropdown__link {
+    border-radius: 0 0 10px 10px;
+}
+.dropdown__item:hover > .dropdown__link {
+    border-bottom: 2px solid #edbfff;
+    background: rgba(54, 41, 62, 0.8);
+}
 .dropdown-menu__select {
     display: block;
     margin: 0 auto;
+}
+.dropdown-menu__select .dropdown__link {
+    text-decoration: underline;
 }
 .dropdown__link {
     display:block;
@@ -1174,13 +1192,13 @@ body {
     width: 250px;
     border: 1px solid #051116;
     border-top: 1px solid #513e59;
-    border-bottom: 1px solid #35273d;
-    border-radius: 10px;
+    /*border-bottom: 1px solid #35273d;*/
     font-size: 24px;
     text-align: center;
     text-decoration: none;
-    background: rgba(54, 41, 62, 0.9);
+    background: rgba(54, 41, 62, 0.5);
     color: #FFF;
+    border-bottom: 2px solid transparent;
 }
 .dropdown-menu:hover .dropdown__item {
     display: block;
