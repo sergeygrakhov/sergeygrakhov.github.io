@@ -1167,6 +1167,7 @@ body {
 }
 .dropdown-menu__select > .dropdown__link {
     border-radius: 10px;
+    border-bottom: 2px solid #051116;
 }
 .dropdown-menu:hover .dropdown-menu__select > .dropdown__link {
     border-radius: 10px 10px 0 0;
