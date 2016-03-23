@@ -1151,7 +1151,6 @@ body {
 }
 .dropdown__item {
     display: none;
-    margin-top: 0;
     width: 250px;
     border: 1px solid #051116;
     background: rgba(54, 41, 62, 0.3);
@@ -1182,7 +1181,7 @@ body {
 }
 .dropdown-menu__select {
     display: block;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 .dropdown-menu__select .dropdown__link {
     text-decoration: underline;
@@ -1203,7 +1202,7 @@ body {
 }
 .dropdown-menu:hover .dropdown__item {
     display: block;
-    margin: 0;
+    /*margin: 0;*/
     border-top: 1px solid #513e59;
     border-bottom: 1px solid #35273d;
     text-align: center;
