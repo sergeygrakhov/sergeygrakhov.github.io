@@ -259,7 +259,7 @@
     }
     /*brands*/
     .brands {
-        padding: 30px 0 75px 0;
+        padding: 35px 0;
         text-align: center;
     }
 
@@ -432,7 +432,6 @@
     .about {
         color: #fff;
         padding: 75px 0;
-        background: url("../img/background-line.jpg") repeat-x;
     }
     .about__item {
         float: left;
@@ -485,7 +484,7 @@
     }
     /*testimonial*/
     .testimonial {
-        padding: 100px 0 0 18px;
+        padding: 100px 0;
         background: #F9F9F9;
     }
     .testimonial__item:first-child {
@@ -511,8 +510,8 @@
     }
     .testimonial__item:last-child {
         float: left;
-        width: 325px;
-        margin: 0 0 0 40px;
+        width: 335px;
+        margin: 0 20px 0 30px;
     }
     .testimonial__title {
         font-size: 24px;
@@ -578,9 +577,6 @@
         max-width: 220px;
         margin: 0 30px 0 0;
     }
-    /*.news__item:nth-child(2) {
-        margin:0 132px 0 138px;
-    }*/
     .news__title {
         font-size: 26px;
         margin: 0 0 7px 0;
@@ -707,7 +703,6 @@
     /*about*/
     .about {
         color: #fff;
-        background: url("../img/line480.jpg") repeat-x;
         padding: 75px 0 50px 0;
     }
     .about__item {
@@ -963,7 +958,6 @@
     /*about*/
     .about {
         color: #fff;
-        background: url("../img/line320.jpg") repeat-x;
         padding: 70px 0 55px 0;
     }
     .about__item {
@@ -1125,11 +1119,11 @@ body {
     margin: 0 auto
 }
 .brands__image {
-    padding: 10px 10px;
+    padding: 10px 25px;
 }
 .about {
     border-top: 1px solid #34263b;
-    background: linear-gradient(#32283c,#37293e);
+    background-image: linear-gradient(to bottom, #745083 0%, #322539 100%);
 }
 .brands__image {
     display: inline-block;
@@ -1156,12 +1150,12 @@ body {
     background: rgba(54, 41, 62, 0.3);
 }
 .navi {
-    top: 162px;
+    top: 192px;
     position: absolute;
 }
 .dropdown-menu {
     width: 250px;
-    margin: auto;
+    margin: 30px auto;
 
 }
 .dropdown-menu__select > .dropdown__link {
@@ -1214,4 +1208,8 @@ body {
 .dropdown-menu__select:hover .dropdown__item:last-child {
     border-top: 0;
     border-radius:  0 0 10px 10px;
+}
+.brands {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
 }
