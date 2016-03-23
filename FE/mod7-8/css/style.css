@@ -890,12 +890,12 @@
         text-decoration: underline;
     }
     .designed {
-        float: right;
         color: #FFF;
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
         font-size: 12px;
         font-family: 'open_sanslight', Arial, sans-serif;
-        margin: 37px 162px 60px 0;
+        text-align: center;
+        padding: 20px 0 40px 0;
     }
     .designed__color {
         font-family: 'open_sansextrabold', Arial, sans-serif;
