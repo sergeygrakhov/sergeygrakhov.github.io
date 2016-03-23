@@ -942,9 +942,7 @@
         padding: 33px 0 191px 64px;
     }
     .slider__text {
-        float: left;
         margin: 145px 0 0 0;
-        width: 217px;
         color: #fff;
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
     }
@@ -1039,8 +1037,6 @@
         font-size: 30px;
     }
     .testimonial__item:last-child {
-        float: left;
-        width: 325px;
         margin: 119px 0 0 0;
     }
     .testimonial__title {
