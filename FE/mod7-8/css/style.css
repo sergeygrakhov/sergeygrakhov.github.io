@@ -770,12 +770,14 @@
 
     .testimonial__item:last-child > .testimonial__title {
         font-size: 30px;
+        text-align: left;
+        padding: 0 0 0 70px;
     }
 
     .testimonial__item:last-child {
-        float: left;
         width: auto;
         margin: 40px 0 0 0;
+        text-align: center;
     }
     .testimonial__title {
         font-size: 30px;
@@ -821,7 +823,7 @@
         color: #000;
         float: right;
         font-size: 19px;
-        margin: -1px -18px 0 0;
+        margin: 0 30px 0 0;
     }
     .testimonial__link:hover {
         text-shadow: 0 0 3px rgba(0,0,0,0.5);
