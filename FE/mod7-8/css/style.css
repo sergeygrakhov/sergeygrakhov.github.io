@@ -1017,9 +1017,10 @@
         display: block;
     }
     .testimonial__item:first-child {
-        float: left;
+        /*float: left;*/
         background: #FFF;
-        margin: 3px 0 0 -1px;
+        position: relative;
+       /* margin: 3px 0 0 -1px;*/
     }
     .testimonial__item:first-child:after {
         content: url("../img/snos.png");
@@ -1077,8 +1078,8 @@
         height: 49px;
     }
     .testimonial__item:first-child >.testimonial__sprite {
-        top: 1286px;
-        left: 46px;
+        top: 10px;
+        left: -15px;
     }
     .testimonial__link768 {
         text-decoration: none;
