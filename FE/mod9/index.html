@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homework9</title>
-    <!-- [if !IE]>-->
+    <!--[if lt IE 9]>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <!--<![endif]-->
-    <!--[if IE 8]> <link rel="stylesheet" href="css/ie.css" /> <![endif] -->
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header clearfix">
+        <div class="superheader">
+            <div class="wrapper">
+        <header class="header clearfix">
             <p class="header__logo">PINGBULL<span class="header__logo__color">ER</span></p>
-            <ul class="drop-menu"><!--for 480p-->
-                <li class="drop-menu__button"><a href="#" class="drops__link">HOME</a>
-                    <ul class="drops">
-                        <li class="drops__item"><a href="#" class="drops__link">ABOUT</a></li>
-                        <li class="drops__item"><a href="#" class="drops__link">BLOG</a></li>
-                        <li class="drops__item"><a href="#" class="drops__link">PRODUCTS</a></li>
-                        <li class="drops__item"><a href="#" class="drops__link">LOREM IPSUM</a></li>
-                        <li class="drops__item"><a href="#" class="drops__link">DOLOR SIT AMET</a></li>
+            <div class="dropdown-menu"><!--for 480p-->
+                <div class="dropdown-menu__select"><a href="#" class="dropdown__link" id="">HOME</a></div>
+                    <ul class="navi">
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">ABOUT</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">BLOG</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">PRODUCTS</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">LOREM IPSUM</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">DOLOR SIT AMET</a></li>
                     </ul>
-                </li>
-            </ul>
+            </div>
             <ul class="menu">
                 <li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">ABOUT</a></li>
@@ -33,81 +34,96 @@
                 <li class="menu__item"><a href="#" class="menu__link">LOREM IPSUM</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">DOLOR SIT AMET</a></li>
             </ul>
+            </header>
+            </div>
+                <div class="transparent">
+                    <div class="wrapper">
+                        <div class="slider clearfix">
+                            <div class="slider__text">
+                            <span class="slider__title">Lorem Ipsum Dolor</span>
+                            <span class="slider__title2">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="hide">TRUE</span></span>
+                            <p class="slider__maintext">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et
+                            auctor turpis ornare a. Nam venenatis hendrerit est <span class="hide">at volutpat. Morbi elementum euismod lacus i
+                            d semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et
+                            felis aliquam a tempus lectus lobortis.</span></p>
+                        </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="img/iphone.png" alt="iphone"/>
+                    </div>
+                    </div>
+                </div>
         </div>
-        <div class="slider clearfix">
-            <div class="slider__text">
-                <span class="slider__title">Lorem Ipsum Dolor</span>
-                <span class="slider__title2">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="hide">TRUE</span></span>
-                <p class="slider__maintext">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et
-                auctor turpis ornare a. Nam venenatis hendrerit est <span class="hide">at volutpat. Morbi elementum euismod lacus i
-                d semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et
-                felis aliquam a tempus lectus lobortis.</span></p>
-            </div>
-            <div class="slider__item">
-                <img src="img/iphone.png" alt="iphone"/>
-            </div>
-            <div class="slider__item480">
-                <img src="img/iphone480.png" alt="iphone"/>
-            </div>
         </div>
         <div class="about clearfix">
-            <div class="about__item">
-                <div class="about__sprite" id="first-pic"></div>
+            <div class="wrapper">
+            <section class="about__item">
                 <h4 class="about__title">ABOUT OUR COMPANY</h4>
                 <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus <span class="hideabout">ultrices posuere. Pellentesque vel</span><span class="hide">lacus eget nisi convallis auctor. Nam</span></p>
                 <a href="#" class="about__link">READ MORE</a>
-            </div>
-            <div class="about__item">
-                <div class="about__sprite" id="second-pic"></div>
+            </section>
+            <section class="about__item">
                 <h4 class="about__title">ABOUT OUR COMPANY</h4>
                 <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus <span class="hideabout">ultrices posuere. Pellentesque vel</span><span class="hide">lacus eget nisi convallis auctor. Nam</span></p>
                 <a href="#" class="about__link">READ MORE</a>
-            </div>
-            <div class="about__item">
-                <div class="about__sprite" id="third-pic"></div>
+            </section>
+            <section class="about__item">
                 <h4 class="about__title">ABOUT OUR COMPANY</h4>
                 <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus <span class="hideabout">ultrices posuere. Pellentesque vel</span><span class="hide">lacus eget nisi convallis auctor. Nam</span></p>
                 <a href="#" class="about__link">READ MORE</a>
-            </div>
+            </section>
+                </div>
         </div>
         <div class="testimonial clearfix">
+            <div class="wrapper">
             <div class="testimonial__item">
-                <div class="testimonial__sprite"></div>
-                <h4 class="testimonial__title">PINGBULLER <span class="testimonial__color">STARTS HERE</span></h4>
+                <div class="testimonial__sprite"><img src="img/man.png" alt="user"></div>
+               <div class="textimage"> <h4 class="testimonial__title">PINGBULLER <span class="testimonial__color">STARTS HERE</span></h4>
                 <p class="testimonial__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                     Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
                     vitae <span class="hideabout"> lectus eu libero pellentesque pulvinar</span><span class="testimonial__hide"> urna risus, mattis pulvinar bibendum in, venenatis
-                    quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.</span></p>
+                    quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.</span></p></div>
             </div>
             <div class="testimonial__item">
                 <h4 class="testimonial__title">RECENT UPDATES</h4>
                 <div class="testimonial__update">
-                    <div class="testimonial__sprite" id="ico1"></div>
+                   <div class="testimonial__sprite"><img src="img/bubble1.png" alt="user"> </div>
+                    <div class="textimage2">
                     <h4 class="testimonial__update__title">Nunc turpis neque<span class="hideabout"> feugiat eget</span></h4>
                     <p class="testimonial__update__text">Posted by Admin on March 13<span class="hideabout">  2012 </span><span class="hide">in Recent News</span></p>
-                    </div>
+                    </div></div>
                 <div class="testimonial__update">
-                    <div class="testimonial__sprite" id="ico2"></div>
+                    <div class="testimonial__sprite"><img src="img/bubble2.png" alt="user"></div>
+                    <div class="textimage2">
                     <h4 class="testimonial__update__title">Nunc turpis neque<span class="hideabout"> feugiat eget</span></h4>
                     <p class="testimonial__update__text">Posted by Admin on March 13<span class="hideabout">  2012 </span><span class="hide">in Category</span></p>
-                </div>
+                </div></div>
                 <div class="testimonial__update">
-                    <div class="testimonial__sprite" id="ico3"></div>
+                    <div class="testimonial__sprite"><img src="img/bubble3.png" alt="user"></div>
+                    <div class="textimage2">
                     <h4 class="testimonial__update__title">Nunc turpis neque<span class="hideabout"> feugiat eget</span></h4>
                     <p class="testimonial__update__text">Posted by Admin on March 13<span class="hideabout">  2012 </span><span class="hide">in Blog Updates</span></p>
-                </div>
+                </div></div>
                 <a href="#" class="testimonial__link">READ MORE HERE</a>
                 <a href="#" class="testimonial__link768">MORE BLOG POSTS</a>
             </div>
+                </div>
         </div>
-        <div class="brands"><img src="img/logos.png" alt="brands"/></div>
-        <div class="brands768"><img src="img/logos768.png" alt="brands"/></div>
-        <div class="brands480"><img src="img/logos480.png" alt="brands"/></div>
-        <div class="brands320"><img src="img/logos320.png" alt="brands"/></div>
+        <div class="brands">
+            <div class="wrapper">
+            <ul class="brands__list">
+            <li class="brands__image"><img src="img/logo1.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo2.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo3.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo4.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo5.png" alt="brand"/></li>
+            <li class="brands__image"><img src="img/logo6.png" alt="brand"/></li>
+        </ul></div>
+        </div>
         <div class="news clearfix">
+            <div class="wrapper">
             <div class="news__item">
                 <h4 class="news__title">PIGBULL<span class="news__color">ER</span></h4>
                 <p class="news__text"><span class="news__copyright">Copyright 2013, Pingbull AS</span>
@@ -130,27 +146,9 @@
                     venenatis quis</p>
             </div>
         </div>
-        <div class="news768 clearfix">
-            <div class="news__item">
-                <h4 class="news__title">NEWS CATEGORIES</h4>
-                <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
-                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
-                    vitae lectus eu libero pellentesque</p>
-            </div>
-            <div class="news__item">
-                <h4 class="news__title">NEWS CATEGORIES</h4>
-                <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
-                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
-                    vitae lectus eu libero pellentesque</p>
-            </div>
-            <div class="news__item">
-                <h4 class="news__title">NEWS CATEGORIES</h4>
-                <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
-                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam
-                    vitae lectus eu libero pellentesque</p>
-            </div>
         </div>
-        <div class="bottom clearfix">
+        <footer class="bottom clearfix">
+            <div class="wrapper">
             <ul class="bottommenu">
                 <li class="bottommenu__item"><a href="#" class="bottommenu__link">HOME</a></li>
                 <li class="bottommenu__item"><a href="#" class="bottommenu__link">ABOUT</a></li>
@@ -160,7 +158,7 @@
                 <li class="bottommenu__item"><a href="#" class="bottommenu__link">DOLOR SIT AMET</a></li>
             </ul>
             <div class="designed">Designed by <span class="designed__color">Pingbull AS</span></div>
-        </div>
-    </div>
+            </div>
+        </footer>
 </body>
 </html>

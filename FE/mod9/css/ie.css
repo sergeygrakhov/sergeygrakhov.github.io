@@ -54,10 +54,7 @@ body {
 .wrapper {
     width: 960px;
 }
-.brands768,
-.brands480,
-.slider__item480,
-.drop-menu,
+.dropdown-menu,
 .brands320 {
     display: none;
 }
