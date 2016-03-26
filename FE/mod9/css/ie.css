@@ -1,24 +1,28 @@
 @font-face {
     font-family: 'league_gothicregular';
-    src: url('http://sergeygrakhov.github.io/FE/mod9/fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/league_gothic-webfontA.eot');
+    src: url('../fonts/league_gothic-webfontA.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sansregular';
-    src: url('http://sergeygrakhov.github.io/FE/mod9/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/OpenSans-Regular-webfontA.eot');
+    src: url('../fonts/OpenSans-Regular-webfontA.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sanslight';
-    src: url('http://sergeygrakhov.github.io/FE/mod9/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/OpenSans-Light-webfontA.eot');
+    src: url('../fonts/OpenSans-Light-webfontA.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sansextrabold';
-    src: url('http://sergeygrakhov.github.io/FE/mod9/fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/OpenSans-ExtraBold-webfontA.eot');
+    src: url('../fonts/OpenSans-ExtraBold-webfontA.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
