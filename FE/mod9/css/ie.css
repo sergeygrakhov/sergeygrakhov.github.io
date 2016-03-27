@@ -1,44 +1,5 @@
-@font-face {
-    font-family: 'sansreg';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-    url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'got';
-    src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-    url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-    url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'light';
-    src: url('../fonts/opensanslight-webfont.eot');
-    src: url('../fonts/opensanslight-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensanslight-webfont.woff2') format('woff2'),
-    url('../fonts/opensanslight-webfont.woff') format('woff'),
-    url('../fonts/opensanslight-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'extrabold';
-    src: url('../fonts/opensansextrabold-webfont.eot');
-    src: url('../fonts/opensansextrabold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensansextrabold-webfont.woff2') format('woff2'),
-    url('../fonts/opensansextrabold-webfont.woff') format('woff'),
-    url('../fonts/opensansextrabold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 body {
-    font-family: 'got', Arial, sans-serif;
+    font-family: 'league_gothicregular', Arial, sans-serif;
 }
 
 .clearfix:after {
@@ -111,17 +72,17 @@ body {
     color: #FFF;
     display: block;
     font-size: 60px;
-    font-family: 'got', Arial, sans-serif;
+    font-family: 'league_gothicregular', Arial, sans-serif;
 }
 .slider__title2 {
     display: block;
     color: #be9acc;
     font-size: 32px;
-    font-family: 'got', Arial, sans-serif;
+    font-family: 'league_gothicregular', Arial, sans-serif;
     margin: 0 0 6px 0;
 }
 .slider__maintext {
-    font-family: 'light', Arial, sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 19px;
     line-height: 21px;
     margin: 9px 0 0 0;
@@ -165,7 +126,7 @@ body {
 }
 .about__text {
     margin: 8px 0 0 0;
-    font-family: 'light', Arial, sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 16px;
     line-height: 23px;
     padding: 0 0 0 45px;
@@ -218,7 +179,7 @@ body {
     color: #edbfff;
 }
 .testimonial__text {
-    font-family: 'sansreg', Arial, sans-serif;
+    font-family: 'open_sansregular', Arial, sans-serif;
     font-size: 16px;
     line-height: 21px;
 }
@@ -238,11 +199,11 @@ body {
     position: absolute;
 }
 .testimonial__update__title {
-    font-family: 'extrabold', Arial, sans-serif;
+    font-family: 'open_sansextrabold', Arial, sans-serif;
     font-size: 16px;
 }
 .testimonial__update__text {
-    font-family: 'light', Arial, sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 16px;
     margin: 10px 0 0 0;
 }
@@ -285,11 +246,11 @@ body {
     color: #424c43;
     display: block;
     font-size: 16px;
-    font-family: 'light', Arial, sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
 }
 .news__text {
     font-size: 16px;
-    font-family: 'light', Arial, sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     line-height: 23px;
 }
 /*footer*/
@@ -319,11 +280,11 @@ body {
     float: right;
     color: #FFF;
     font-size: 12px;
-    font-family: 'light', Arial, sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     margin: 18px 0 0 0;
 }
 .designed__color {
-   font-family: 'extrabold', Arial, sans-serif;
+   font-family: 'open_sansextrabold', Arial, sans-serif;
 }
 .brands {
     border-top: 1px solid #e6e6e6;
