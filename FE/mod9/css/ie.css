@@ -1,28 +1,47 @@
 @font-face {
     font-family: 'league_gothicregular';
     src: url('../fonts/league_gothic-webfontA.eot');
-    src: url('../fonts/league_gothic-webfontA.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/league_gothic-webfontA.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+    url('../fonts/league_gothic-webfont.woff') format('woff'),
+    url('../fonts/league_gothic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sansregular';
     src: url('../fonts/OpenSans-Regular-webfontA.eot');
-    src: url('../fonts/OpenSans-Regular-webfontA.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/OpenSans-Regular-webfontA.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sanslight';
     src: url('../fonts/OpenSans-Light-webfontA.eot');
-    src: url('../fonts/OpenSans-Light-webfontA.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/OpenSans-Light-webfontA.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sansextrabold';
     src: url('../fonts/OpenSans-ExtraBold-webfontA.eot');
-    src: url('../fonts/OpenSans-ExtraBold-webfontA.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/OpenSans-ExtraBold-webfontA.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tex';
+    src: url('../fonts/texgyreheroscn-regular-webfont.eot');
+    src: url('../fonts/texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/texgyreheroscn-regular-webfont.woff2') format('woff2'),
+    url('../fonts/texgyreheroscn-regular-webfont.woff') format('woff'),
+    url('../fonts/texgyreheroscn-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -96,13 +115,13 @@
     color: #FFF;
     display: block;
     font-size: 60px;
-    font-family: 'league_gothicregular', Arial, sans-serif;
+    font-family: 'tex', Arial, sans-serif;
 }
 .slider__title2 {
     display: block;
     color: #be9acc;
     font-size: 32px;
-    font-family: 'league_gothicregular', Arial, sans-serif;
+    font-family: 'tex', Arial, sans-serif;
     margin: 0 0 6px 0;
 }
 .slider__maintext {
@@ -315,7 +334,7 @@
     border-bottom: 1px solid #e6e6e6;
 }
 body {
-     font-family: 'league_gothicregular', Arial, sans-serif;
+     font-family: 'tex', Arial, sans-serif;
  }
 .wrapper {
     margin: 0 auto
