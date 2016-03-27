@@ -29,7 +29,7 @@
     font-style: normal;
 }
 body {
-    font-family: 'LeagueGotic';
+    font-family: 'LeagueGotic', Arial, sans-serif;
 }
 
 .clearfix:after {
@@ -102,18 +102,17 @@ body {
     color: #FFF;
     display: block;
     font-size: 60px;
-    font-family: 'LeagueGotic';
+    font-family: 'LeagueGotic',Arial, sans-serif;
 }
 .slider__title2 {
     display: block;
     color: #be9acc;
     font-size: 32px;
-    font-family: 'LeagueGotic';
+    font-family: 'LeagueGotic',Arial, sans-serif;
     margin: 0 0 6px 0;
 }
 .slider__maintext {
-    font-family: 'OpenSansLight';
-    font-size: 19px;
+    font-family: 'OpenSansLight',Arial, sans-serif
     line-height: 21px;
     margin: 9px 0 0 0;
 }
@@ -156,7 +155,7 @@ body {
 }
 .about__text {
     margin: 8px 0 0 0;
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansLight',Arial, sans-serif;
     font-size: 16px;
     line-height: 23px;
     padding: 0 0 0 45px;
@@ -209,7 +208,7 @@ body {
     color: #edbfff;
 }
 .testimonial__text {
-    font-family: 'sansreg';
+    font-family: 'sansreg',Arial, sans-serif;
     font-size: 16px;
     line-height: 21px;
 }
@@ -229,11 +228,11 @@ body {
     position: absolute;
 }
 .testimonial__update__title {
-    font-family: 'OpenSansExtraBold';
+    font-family: 'OpenSansExtraBold',Arial, sans-serif;
     font-size: 16px;
 }
 .testimonial__update__text {
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansLight',Arial, sans-serif;
     font-size: 16px;
     margin: 10px 0 0 0;
 }
@@ -276,11 +275,11 @@ body {
     color: #424c43;
     display: block;
     font-size: 16px;
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansLight',Arial, sans-serif;
 }
 .news__text {
     font-size: 16px;
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansLight',Arial, sans-serif;
     line-height: 23px;
 }
 /*footer*/
@@ -310,11 +309,11 @@ body {
     float: right;
     color: #FFF;
     font-size: 12px;
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansLight',Arial, sans-serif;
     margin: 18px 0 0 0;
 }
 .designed__color {
-   font-family: 'OpenSansExtraBold';
+   font-family: 'OpenSansExtraBold',Arial, sans-serif;
 }
 .brands {
     border-top: 1px solid #e6e6e6;
