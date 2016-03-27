@@ -1198,6 +1198,9 @@ body {
 }
 .about {
     border-top: 1px solid #34263b;
+    background-image: -webkit-linear-gradient(to bottom, #745083 0%, #322539 100%);
+    background-image: -moz-linear-gradient(bottom, #745083 0%, #322539 100%);
+    background-image: -o-linear-gradient(to bottom, #745083 0%, #322539 100%);
     background-image: linear-gradient(to bottom, #745083 0%, #322539 100%);
 }
 .brands__image {
