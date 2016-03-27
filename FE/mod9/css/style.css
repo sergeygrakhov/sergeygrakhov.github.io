@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'league_gothicregular';
-    src: url('../fonts/league_gothic-webfontA.eot');
-    src: url('../fonts/league_gothic-webfontA.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/league_gothic-webfont.woff2') format('woff2'),
     url('../fonts/league_gothic-webfont.woff') format('woff'),
     url('../fonts/league_gothic-webfont.ttf') format('truetype');
@@ -10,8 +10,8 @@
 }
 @font-face {
     font-family: 'open_sansregular';
-    src: url('../fonts/OpenSans-Regular-webfontA.eot');
-    src: url('../fonts/OpenSans-Regular-webfontA.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
     url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -19,8 +19,8 @@
 }
 @font-face {
     font-family: 'open_sanslight';
-    src: url('../fonts/OpenSans-Light-webfontA.eot');
-    src: url('../fonts/OpenSans-Light-webfontA.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
     url('../fonts/OpenSans-Light-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -28,8 +28,8 @@
 }
 @font-face {
     font-family: 'open_sansextrabold';
-    src: url('../fonts/OpenSans-ExtraBold-webfontA.eot');
-    src: url('../fonts/OpenSans-ExtraBold-webfontA.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
     url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype');
     font-weight: normal;
