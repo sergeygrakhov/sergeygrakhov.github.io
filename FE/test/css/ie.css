@@ -127,7 +127,7 @@ body {
 }
 .about__item {
     float: left;
-    width: 271px;
+    width: 100px;
 }
 .about__item:before {
     content: " ";
