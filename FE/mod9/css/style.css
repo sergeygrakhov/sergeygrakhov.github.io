@@ -1201,7 +1201,7 @@ body {
     background-image: -webkit-linear-gradient(top, #745083 0%, #322539 100%);
     background-image: -moz-linear-gradient(top, #745083 0%, #322539 100%);
     background-image: -o-linear-gradient(top, #745083 0%, #322539 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539',GradientType= 0 );
+    background-image: -ms-linear-gradient(top, #745083 0%, #322539 100%);
     background-image: linear-gradient(to bottom, #745083 0%, #322539 100%);
 }
 .brands__image {
