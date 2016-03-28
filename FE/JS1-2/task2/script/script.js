@@ -11,5 +11,5 @@ userName = prompt('Введите имя пользователя');
 for (i = 0; i<arrayNames.length; i++) {
      if (arrayNames[i] == userName) {
         alert (userName + ", вы успешно вошли");
-    }
+    } else {alert ('Неверное имя пользователя, Вы не вошли')}
 }
