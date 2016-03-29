@@ -28,6 +28,7 @@ var button = document.createElement('input');
     button.style.height = '40px';
     button.style.backgroundColor = '#BCE7F5';
     button.style.marginTop = '50px';
+    button.style.border = '2px solid black';
 wrapper.classList.add('wrapper');
 wrapper.style.fontSize = '18px';
 wrapper.style.fontFamily = 'arial';
