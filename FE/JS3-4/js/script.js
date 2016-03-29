@@ -36,7 +36,7 @@ wrapper.appendChild(head);
 parent.appendChild(wrapper);
 wrapper.appendChild(form);
 form.appendChild(ol);
-for (i=0; i<3; i++) {
+for (i=0; i<page.question.length; i++) {
     var li = document.createElement('li');
     ol.appendChild(li);
     var h4 = document.createElement('h4');
