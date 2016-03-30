@@ -9,7 +9,7 @@ var page = {
     submit: 'Проверить мои результаты'
 };
 var k = 0;
-var head = document.createElement('div');
+var head = document.createElement('header');
     head.style.textAlign = 'center';
 var form = document.createElement('form');
     form.action = '#';
@@ -17,21 +17,13 @@ var form = document.createElement('form');
 var ol = document.createElement('ol');
 var parent = document.body;
 var wrapper = document.createElement('div');
-    wrapper.style.width = '600px';
-    wrapper.style.margin = '30px 0 0 50px';
-var footer = document.createElement('div');
+    wrapper.classList.add('wrapper');
+var footer = document.createElement('footer');
     footer.style.textAlign = 'center';
 var button = document.createElement('input');
     button.type = 'submit';
     button.value = page.submit;
-    button.style.width = '300px';
-    button.style.height = '40px';
-    button.style.backgroundColor = '#BCE7F5';
-    button.style.marginTop = '50px';
-    button.style.border = '2px solid black';
-wrapper.classList.add('wrapper');
-wrapper.style.fontSize = '18px';
-wrapper.style.fontFamily = 'arial';
+    button.classList.add('footer');
 head.innerHTML= page.header;
 wrapper.appendChild(head);
 parent.appendChild(wrapper);
@@ -48,13 +40,13 @@ for (i=0; i<page.question.length; i++) {
         checkbox.type = 'checkbox';
         checkbox.name = page.checkboxname[k];
         checkbox.id = page.id[k];
-        var div = document.createElement('div');
+        var p = document.createElement('p');
         var label = document.createElement('label');
         label.htmlFor = page.id[k];
         label.appendChild(document.createTextNode(page.answer[k]));
-        li.appendChild(div);
-        div.appendChild(checkbox);
-        div.appendChild(label);
+        li.appendChild(p);
+        p.appendChild(checkbox);
+        p.appendChild(label);
         k++;
     }
 }
