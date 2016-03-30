@@ -10,7 +10,6 @@ var page = {
 };
 var k = 0;
 var head = document.createElement('header');
-    head.style.textAlign = 'center';
 var form = document.createElement('form');
     form.action = '#';
     form.method = ' ';
@@ -19,7 +18,6 @@ var parent = document.body;
 var wrapper = document.createElement('div');
     wrapper.classList.add('wrapper');
 var footer = document.createElement('footer');
-    footer.style.textAlign = 'center';
 var button = document.createElement('input');
     button.type = 'submit';
     button.value = page.submit;
