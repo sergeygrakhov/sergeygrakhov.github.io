@@ -13,13 +13,13 @@ header {
     font-weight: bold;
 }
 .timer__window {
-    margin: 0 auto 50px;
+    margin: 0 200px 50px 200px;
     border-radius: 30px;
     border: 10px solid #000;
     background-color: #79878d;
     color: #000;
     font-size: 50px;
-    width: 40%;
+    width: auto;
     box-sizing: border-box;
     text-align: center;
 }
