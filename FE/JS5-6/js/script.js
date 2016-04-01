@@ -148,7 +148,6 @@ function timer() {
                 }
                     i++;
                     pause.msec = i * 4 - 1;
-                    console.log(pause.msec);
             }, 4);
             time.min = pause.min;
             time.sec = pause.sec;
