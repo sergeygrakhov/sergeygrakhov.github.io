@@ -22,33 +22,33 @@ var button = document.createElement('input');
     button.type = 'submit';
     button.value = page.submit;
     button.classList.add('footer');
-head.innerHTML= page.header;
-wrapper.appendChild(head);
-parent.appendChild(wrapper);
-wrapper.appendChild(form);
-form.appendChild(ol);
-for (i=0; i<page.question.length; i++) {
-    var li = document.createElement('li');
-    ol.appendChild(li);
-    var h4 = document.createElement('h4');
-    h4.innerHTML = page.question[i];
-    li.appendChild(h4);
-    for (j=0;j<3;j++) {
-        var checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.name = page.checkboxname[k];
-        checkbox.id = page.id[k];
-        var p = document.createElement('p');
-        var label = document.createElement('label');
-        label.htmlFor = page.id[k];
-        label.appendChild(document.createTextNode(page.answer[k]));
-        li.appendChild(p);
-        p.appendChild(checkbox);
-        p.appendChild(label);
-        k++;
+    head.innerHTML= page.header;
+    wrapper.appendChild(head);
+    parent.appendChild(wrapper);
+    wrapper.appendChild(form);
+    form.appendChild(ol);
+    for (i=0; i<page.question.length; i++) {
+        var li = document.createElement('li');
+        ol.appendChild(li);
+        var h4 = document.createElement('h4');
+        h4.innerHTML = page.question[i];
+        li.appendChild(h4);
+        for (j=0;j<3;j++) {
+            var checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.name = page.checkboxname[k];
+            checkbox.id = page.id[k];
+            var p = document.createElement('p');
+            var label = document.createElement('label');
+            label.htmlFor = page.id[k];
+            label.appendChild(document.createTextNode(page.answer[k]));
+            li.appendChild(p);
+            p.appendChild(checkbox);
+            p.appendChild(label);
+            k++;
+        }
     }
-}
-form.appendChild(footer);
-footer.appendChild(button);
+    form.appendChild(footer);
+    footer.appendChild(button);
 
 
