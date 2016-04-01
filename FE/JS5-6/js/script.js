@@ -198,6 +198,7 @@ function clearHandler() {
     timerWindowHour.innerHTML = '0'+ time.hour;
     timerWindowMinutes.innerHTML = '0'+ time.min;
     timerWindowSeconds.innerHTML = '0'+ time.sec;
+    startStopButton.removeAttribute("id");
     //startStopButton.removeEventListener("click", handler);
    // startStopButton.addEventListener("click", handler);
 }
