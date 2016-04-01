@@ -35,7 +35,7 @@ var startStopButton = document.createElement('input');
 var clearButton = document.createElement('input');
     wrapper.classList.add('wrapper');
     body.appendChild(wrapper);
-    header.innerHTML = "Таймер дз 5-6";
+    header.innerHTML = "JavaScript timer homework 5-6";
     wrapper.appendChild(header);
     timerWindow.classList.add('timer__window');
     wrapper.appendChild(timerWindow);
