@@ -53,46 +53,28 @@ clearButton.type = 'button';
 clearButton.value = buttonFunction.clear;
 wrapper.appendChild(clearButton);
 function timer() {
-            timeCalc = setInterval(function () {
-                timerWindowMillisec.innerHTML = time.msec.toString();
-                if (time.sec.toString().length == 1) {
-                    timerWindowSeconds.innerHTML = '0' + time.sec;
-                } else {
-                    timerWindowSeconds.innerHTML = time.sec.toString();
+    timeCalc = setInterval(function () {
+        timerWindowMillisec.innerHTML = time.msec.toString();
+        (time.sec.toString().length == 1) ? (timerWindowSeconds.innerHTML = '0' + time.sec) : (timerWindowSeconds.innerHTML = time.sec.toString());
+        (time.min.toString().length == 1) ? (timerWindowMinutes.innerHTML = '0' + time.min) : (timerWindowMinutes.innerHTML = time.min.toString());
+        (time.hour.toString().length == 1) ? (timerWindowHour.innerHTML = '0' + time.hour) : (timerWindowHour.innerHTML = time.hour.toString());
+        if (i == 250) {
+            clearInterval(timeCalc);
+            time.sec += 1;
+            i = 1;
+            timer();
+            if (time.sec == 60) {
+                time.sec = 0;
+                time.min += 1;
+                if (time.min == 60) {
+                    time.min = 0;
+                    time.hour += 1;
                 }
-                if (time.min.toString().length == 1) {
-                    timerWindowMinutes.innerHTML = '0' + time.min;
-                } else {
-                    timerWindowMinutes.innerHTML = time.min.toString();
-                }
-                if (time.hour.toString().length == 1) {
-                    timerWindowHour.innerHTML = '0' + time.hour;
-                } else {
-                    timerWindowHour.innerHTML = time.hour.toString();
-                }
-                if (time.sec.toString().length == 1) {
-                    timerWindowSeconds.innerHTML = '0' + time.sec;
-                } else {
-                    timerWindowSeconds.innerHTML = time.sec.toString();
-                }
-                if (i == 250) {
-                    clearInterval(timeCalc);
-                    time.sec += 1;
-                    i = 1;
-                    timer();
-                    if (time.sec == 60) {
-                        time.sec = 0;
-                        time.min += 1;
-                        if (time.min == 60) {
-                            time.min = 0;
-                            time.hour += 1;
-                        }
-                    }
-                }
-                i++;
-                time.msec = i * 4 - 1;
-            }, 4);
-
+            }
+        }
+        i++;
+        time.msec = i * 4 - 1;
+    }, 4);
 }
 function handler() {
     switch (startStopButton.value) {
