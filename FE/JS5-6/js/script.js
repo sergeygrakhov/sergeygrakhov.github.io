@@ -12,15 +12,7 @@ var time = {
     sec : 0,
     msec : 0
 };
-var pause =  {
-    hour : 0,
-    min : 0,
-    sec : 0,
-    msec : 0
-};
 var timeCalc = 0;
-var timeCalcContinue = 0;
-var choise = 0;
 var i = 1;
 var body = document.body;
 var wrapper = document.createElement('div');
@@ -61,8 +53,6 @@ clearButton.type = 'button';
 clearButton.value = buttonFunction.clear;
 wrapper.appendChild(clearButton);
 function timer() {
-    switch (choise){
-        case 1:
             timeCalc = setInterval(function () {
                 timerWindowMillisec.innerHTML = time.msec.toString();
                 if (time.sec.toString().length == 1) {
@@ -102,80 +92,24 @@ function timer() {
                 i++;
                 time.msec = i * 4 - 1;
             }, 4);
-            break;
-        case 2:
-            pause.min = time.min;
-            pause.sec = time.sec;
-            pause.hour = time.hour;
-            pause.msec = time.msec;
-            break;
-        case 3:
-            timeCalcContinue = setInterval(function () {
-                timerWindowMillisec.innerHTML = pause.msec.toString();
-                if (time.sec.toString().length == 1) {
-                    timerWindowSeconds.innerHTML = '0' + pause.sec;
-                } else {
-                    timerWindowSeconds.innerHTML = pause.sec.toString();
-                }
-                if (time.min.toString().length == 1) {
-                    timerWindowMinutes.innerHTML = '0' + time.min;
-                } else {
-                    timerWindowMinutes.innerHTML = pause.min.toString();
-                }
-                if (time.hour.toString().length == 1) {
-                    timerWindowHour.innerHTML = '0' + pause.hour;
-                } else {
-                    timerWindowHour.innerHTML = pause.hour.toString();
-                }
-                if (time.sec.toString().length == 1) {
-                    timerWindowSeconds.innerHTML = '0' + pause.sec;
-                } else {
-                    timerWindowSeconds.innerHTML = pause.sec.toString();
-                }
-                if (i == 250) {
-                    clearInterval(timeCalcContinue);
-                    pause.sec += 1;
-                    i = 1;
-                    timer();
-                    if (pause.sec == 60) {
-                        pause.sec = 0;
-                        pause.min += 1;
-                        if (pause.min == 60) {
-                            pause.min = 0;
-                            pause.hour += 1;
-                        }
-                    }
-                }
-                i++;
-                pause.msec = i * 4 - 1;
-            }, 4);
-            time.min = pause.min;
-            time.sec = pause.sec;
-            time.hour = pause.hour;
-            time.msec = pause.msec;
-            break;
-    }
+
 }
 function handler() {
     switch (startStopButton.value) {
         case buttonFunction.start:
             startStopButton.value = buttonFunction.pause;
             startStopButton.setAttribute("id", "active");
-            choise = 1;
             timer();
             break;
         case buttonFunction.pause:
             startStopButton.value = buttonFunction.continue;
             startStopButton.removeAttribute("id");
-            choise = 2;
             clearInterval(timeCalc);
             clearInterval(timeCalcContinue);
-            timer();
             break;
         case buttonFunction.continue:
             startStopButton.value = buttonFunction.pause;
             startStopButton.setAttribute("id", "active");
-            choise = 3;
             timer();
             break;
     }
@@ -186,13 +120,8 @@ function clearHandler() {
     time.hour = 0;
     time.min = 0;
     time.sec = 0;
-    pause.min = 0;
-    pause.sec = 0;
-    pause.hour = 0;
-    pause.msec = 0;
     i=1;
     clearInterval(timeCalc);
-    clearInterval(timeCalcContinue);
     timerWindowMillisec.innerHTML = '00'+ time.msec;
     timerWindowHour.innerHTML = '0'+ time.hour;
     timerWindowMinutes.innerHTML = '0'+ time.min;
