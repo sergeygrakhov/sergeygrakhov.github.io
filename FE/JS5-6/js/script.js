@@ -53,7 +53,7 @@ clearButton.type = 'button';
 clearButton.value = buttonFunction.clear;
 wrapper.appendChild(clearButton);
 function timer() {
-    timeCalc = setInterval(function () {
+        timeCalc = setInterval(function () {
         timerWindowMillisec.innerHTML = time.msec.toString();
         (time.sec.toString().length == 1) ? (timerWindowSeconds.innerHTML = '0' + time.sec) : (timerWindowSeconds.innerHTML = time.sec.toString());
         (time.min.toString().length == 1) ? (timerWindowMinutes.innerHTML = '0' + time.min) : (timerWindowMinutes.innerHTML = time.min.toString());
@@ -87,7 +87,6 @@ function handler() {
             startStopButton.value = buttonFunction.continue;
             startStopButton.removeAttribute("id");
             clearInterval(timeCalc);
-            clearInterval(timeCalcContinue);
             break;
         case buttonFunction.continue:
             startStopButton.value = buttonFunction.pause;
