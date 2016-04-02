@@ -107,6 +107,7 @@ function timer() {
             pause.sec = time.sec;
             pause.hour = time.hour;
             pause.msec = time.msec;
+            timeCalcContinue = timeCalc;
             i = j;
         break;
         case 3:
