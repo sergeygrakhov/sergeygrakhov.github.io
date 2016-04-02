@@ -5,9 +5,9 @@ var buttonFunction = {
     clear: 'Clear'
 };
 var time = {
-    hour : 0,
-    min : 0,
-    sec : 0,
+    hour : 3,
+    min : 59,
+    sec : 56,
     msec : 0
 };
 var pause =  {
@@ -197,6 +197,5 @@ function clearHandler() {
     timerWindowSeconds.innerHTML = '0'+ time.sec;
     startStopButton.removeAttribute("id");
 }
-
 startStopButton.addEventListener("click", handler);
 clearButton.addEventListener("click", clearHandler);
