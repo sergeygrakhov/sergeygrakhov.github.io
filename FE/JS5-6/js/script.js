@@ -5,9 +5,9 @@ var buttonFunction = {
     clear: 'Clear'
 };
 var time = {
-    hour : 3,
-    min : 59,
-    sec : 56,
+    hour : 0,
+    min : 0,
+    sec : 0,
     msec : 0
 };
 var pause =  {
