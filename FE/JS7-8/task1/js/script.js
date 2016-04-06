@@ -52,6 +52,11 @@ $(function () {
         $tab.append($p[$j]);
         $tab.appendTo($wrapper);
     }
+    $('a').click(
+        function(e) {
+            e.preventDefault();
+        }
+    )
     $('#1').addClass('white');
     $('#5').hide();
     $('#6').hide();
