@@ -2,7 +2,8 @@ $(function () {
     $('.popup').hide();
     $(':button').click(
         function (){
-            $('.popup').toggle();
+            $('.popup').show();
+            $('.popup').delay(3000).fadeOut('slow');
         });
     $('#first').hover (
         function(){
