@@ -1,18 +1,16 @@
 .link {
-
     display: block;
     padding: 10px;
     text-decoration: none;
-    border: 1px solid #000;
     line-height: 20px;
-    margin: 5px 5px 0 5px;
+    border-top: 1px solid #000;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
     border-radius: 4px 4px 0 0;
     color: #000;
-    background-color: #e6e6e6;
 }
 ul {
     padding: 0 0 0 15px;
-    background-color: #c8c8c8;
 }
 p {
     padding: 15px 10px 20px;
@@ -23,20 +21,16 @@ li {
 }
 .wrapper {
     margin: 50px auto;
+    padding: 10px;
     width: 800px;
     border: 1px solid gray;
-    background-color: #c8c8c8;
 }
 .tab {
-    position: relative;
-    z-index: 1;
-    margin: -1px 5px 5px 5px;
+    margin: -2px 5px 5px 5px;
     border: 1px solid #000;
-    background-color: #FFF;
+
 }
-.white {
-    position: relative;
-    z-index: 2;
+.active {
     background-color: #FFF;
     border-bottom: 1px solid white;
 }

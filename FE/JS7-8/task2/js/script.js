@@ -1,11 +1,14 @@
 $(function () {
-    $('.popup').hide();
+    var $popup = $('.popup');
+        $popup.hide();
+
     $(':button').click(
         function (){
-            var $popup = $('.popup');
             $popup.show();
             $popup.delay(2000).fadeOut('slow');
+
         });
+
     $('#first').hover (
         function(){
             $('#field1').toggle();
