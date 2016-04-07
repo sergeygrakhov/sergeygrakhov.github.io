@@ -38,13 +38,14 @@ $(function () {
     $wrapper.appendTo('body');
     $ul.appendTo($wrapper);
     for (var $key in $list) {
-        $list[$key].appendTo($ul);
+         $temp = $key;
+        $list[$temp].appendTo($ul);
         var $link = $('<a/>', {
             href: '#',
             class: 'link',
             id:$i+1,
             text: $linksText[$i]});
-        $link.appendTo($list[$key]);
+        $link.appendTo($list[$temp]);
         $i++;
     }
     for ($j=0;$j<$p.length;$j++) {
@@ -57,10 +58,11 @@ $(function () {
             e.preventDefault();
         }
     )
-    $('#1').addClass('white');
+    var $first = $('#1');
+    $first.addClass('white');
     $('#5').hide();
     $('#6').hide();
-    $('#1').click( function() {
+    $first.click( function() {
         $('#1').addClass('white');
         $('#2').removeClass('white');
         $('#3').removeClass('white');
