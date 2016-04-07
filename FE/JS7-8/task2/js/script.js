@@ -6,25 +6,14 @@ $(function () {
         function (){
             $popup.show();
             $popup.delay(2000).fadeOut('slow');
-
         });
-
-    $('#first').hover (
+    $el = $(':text');
+    $el.mouseover (
         function(){
-            $('#field1').toggle();
-
-        }
-    );
-    $('#last').hover (
+        $(this).siblings('.popup').fadeIn(300);
+        });
+    $el.mouseout (
         function(){
-            $('#field2').toggle();
-
-        }
-    );
-    $('#address').hover (
-        function(){
-            $('#field3').toggle();
-
-        }
-    );
+            $(this).siblings('.popup').fadeOut(300);
+        });
 });

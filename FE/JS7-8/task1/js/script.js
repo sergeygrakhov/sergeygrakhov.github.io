@@ -9,7 +9,6 @@ $(function () {
         $('.box').not($show).hide();
         $($show).fadeIn();
     });
-
 });
 
 
