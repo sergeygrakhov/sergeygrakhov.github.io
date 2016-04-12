@@ -5,10 +5,45 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://oss.maxcdn.com/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/color.js"></script>
     <script src="js/script.js"></script>
     <title>Homework JS 9-10 task2</title>
 </head>
 <body>
-
+<div class="wrapper">
+        <ul>
+            <li class="menu__item"><a href="#">Item 1</a></li>
+            <li class="dropdown menu__item"><a href="#">Item 2</a>
+                <ul class="drops next__level">
+                    <li class="menu__item "><a href="#">Item 1 level 2</a></li>
+                    <li class="menu__item"><a href="#">Item 2 level 2</a></li>
+                    <li class="menu__item"><a href="#">Item 3 level 2</a></li>
+                    <li class="dropdown menu__item">
+                        <a href="#">Item 4 level 2</a>
+                        <ul class="drops next__level">
+                            <li class="menu__item"><a href="#">Item 1 level 3</a></li>
+                            <li class="dropdown menu__item">
+                                <a href="#">Item 2 level 3</a>
+                                <ul class="drops next__level">
+                                    <li class="menu__item"><a href="#">Item 1 level 4</a></li>
+                                    <li class="menu__item"><a href="#">Item 2 level 4</a></li>
+                                    <li class="menu__item"><a href="#">Item 3 level 4</a></li>
+                                    <li class="menu__item"><a href="#">Item 4 level 4</a></li>
+                                    <li class="menu__item"><a href="#">Item 5 level 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#">Item 3 level 3</a></li>
+                            <li class="menu__item"><a href="#">Item 4 level 3</a></li>
+                            <li class="menu__item"><a href="#">Item 5 level 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#">Item 5 level 2</a></li>
+                </ul></li>
+            <li class="menu__item"><a href="#">Item 3</a></li>
+            <li class="menu__item"><a href="#">Item 4</a></li>
+            <li class="menu__item"><a href="#">Item 5</a></li>
+        </ul>
+</div>
 </body>
 </html>
