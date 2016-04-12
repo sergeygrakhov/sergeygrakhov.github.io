@@ -10,6 +10,7 @@ $(function(){
            $(this).children('.drops').slideUp({
                duration: 500,
                easing: 'easeInQuart'});
+           $(this).children('.drops').animate({backgroundColor:"#455961"}, 500 );
        }
    );
 
