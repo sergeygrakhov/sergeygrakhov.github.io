@@ -4,7 +4,8 @@ $(function(){
            $(this).children('.drops').slideDown({
                duration: 500,
                easing: 'easeInQuart'});
-           },
+
+       },
        function() {
            $(this).children('.drops').slideUp({
                duration: 500,

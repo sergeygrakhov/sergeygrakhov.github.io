@@ -10,7 +10,7 @@ body {
     display:inline-block;
     position:relative;
 }
-.next__level {
+.drops {
     background-color: #455961;
     position:absolute;
     left: 0;
@@ -25,12 +25,12 @@ body {
     top: 0;
     left: 199px;
 }
-.next__level  .menu__item:nth-child(-n+4) a {
+.drops .menu__item:nth-child(-n+4) a {
     border-top:solid 1px #000;
     border-left:solid 1px #000;
     border-right:solid 1px #000;
 }
-.next__level  .menu__item:last-child a {
+.drops .menu__item:last-child a {
     border-top:solid 1px #000;
     border-left:solid 1px #000;
     border-right:solid 1px #000;
