@@ -14,10 +14,10 @@ $(function(){
    );
     $('.dropdown .menu__item').hover(
         function() {
-            $(this).animate({backgroundColor:"green"}, 500 );
+            $(this).animate({backgroundColor:"green"}, 1000 );
         },
         function () {
-            $(this).animate({backgroundColor:"#455961"}, 500 );
+            $(this).animate({backgroundColor:"#455961"}, 1000 );
             }
     );
 
