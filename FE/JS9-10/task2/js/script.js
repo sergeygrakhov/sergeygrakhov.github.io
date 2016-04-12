@@ -4,14 +4,22 @@ $(function(){
            $(this).children('.drops').slideDown({
                duration: 500,
                easing: 'easeInQuart'});
-           $(this).children('.drops').animate({backgroundColor:"green"}, 500 );
            },
        function() {
            $(this).children('.drops').slideUp({
                duration: 500,
                easing: 'easeInQuart'});
-           $(this).children('.drops').animate({backgroundColor:"#455961"}, 500 );
+
        }
    );
+    $('.dropdown .menu__item').hover(
+        function() {
+            $(this).animate({backgroundColor:"green"}, 500 );
+        },
+        function () {
+            $(this).animate({backgroundColor:"#455961"}, 500 );
+            }
+    );
+
 
 });
