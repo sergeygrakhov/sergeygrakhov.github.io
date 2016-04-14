@@ -13,7 +13,9 @@
 <script type="text/template" id="profile">
     <div class="main">
         <h1><%= name %></h1>
-        <div class="photo"><%= photo %></div>
+        <div class="photo">
+            <img src="<%= photo.src %>" alt="<%= photo.alt %>" title="<%= photo.title %>" width="<%= photo.width %>" >
+        </div>
         <div class="line">
             <p><%= job %></p>
         </div>

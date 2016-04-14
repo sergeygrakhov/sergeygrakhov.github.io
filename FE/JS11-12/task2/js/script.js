@@ -2,7 +2,12 @@ $(function(){
     var html = $('#profile').html();
     var data = {
         name : 'Грахов Сергей',
-        photo: '<img src="img/IMG_2006.JPG"  alt="My photo" title="Grakhov Sergey" width="200">',
+        photo: {
+            src: 'img/IMG_2006.JPG',
+            alt: 'My photo',
+            title:'Grakhov Sergey',
+            width:'200'
+        },
         job: 'Системный администратор в одной из компаний',
         why: 'Хочу учить фронтенд, потому что:',
         reasons: ['Хочу сменить род деятельности',
