@@ -1466,6 +1466,4 @@
             return this;
         }
     });
-}(jQuery, document));/**
- * Created by frontend on 4/11/16.
- */
+}(jQuery, document));
