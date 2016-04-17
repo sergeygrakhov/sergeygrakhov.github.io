@@ -21,6 +21,5 @@ $(function(){
         feedback_text: 'Помогу чем смогу'
     };
     var content = _.template(html)(data);
-       $('body').append(content);
+    $('body').append(content);
 });
-
