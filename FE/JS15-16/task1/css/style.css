@@ -1,0 +1,21 @@
+.wrapper {
+    margin: 5% auto;
+    width: 80%;
+    font-size: 18px;
+    font-family: Tahoma,sans-serif;
+    text-align: center;
+}
+input[type=text] {
+    margin: 0 0 0 5%;
+    width: 50%;
+}
+.search {
+    margin: 3% 5%;
+}
+.link {
+    color: green;
+}
+.logo {
+    margin: 0 auto;
+    text-align: center;
+}
