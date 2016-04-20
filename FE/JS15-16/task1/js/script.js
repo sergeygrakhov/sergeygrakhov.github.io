@@ -1,12 +1,13 @@
 'use strict';
 function GoogleCallback(jqueryObj,data){
+    if(data.results.length) {
     for (var i = 0; i<data.results.length; i++) {
         $('body').append('<div class="search"><a href="'
             + data.results[i].url+ '">'+data.results[i].title+'</a>'+
                 '<p class="link">'+data.results[i].url+'</p>'+
                 '<p class="content">'+data.results[i].content +'</p>'+
             '</div>');
-    }
+    }} else {$('body').append('<div class="search">Ничего не найдено!</div>')}
     }
 $(function (){
     var string = '';
