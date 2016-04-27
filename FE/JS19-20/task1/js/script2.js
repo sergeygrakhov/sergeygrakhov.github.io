@@ -3,7 +3,7 @@ $(function(){
      e.preventDefault();
      var parentClass = $(this).parent().attr('class');
      if (parentClass == 'innactive') {
-         $(this).parent().removeClass('inactive');
+         $(this).parent().removeClass('innactive');
          $(this).parent().addClass('acctive');
      }
      else {
