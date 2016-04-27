@@ -66,6 +66,7 @@ table {
   font-style: normal; }
 .jcarousel-wrapper {
   position: relative;
+  width: 1160px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
