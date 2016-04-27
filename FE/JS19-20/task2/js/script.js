@@ -274,23 +274,9 @@ var data = [
         "longitude": 37.385548,
         "_id": "56bdc3396fdbaec5ee4ca929"
     }
-];  var k = 0;
-    var array1 = [];
-    for (var i = 0; i<data.length; i++) {
-        for (var j = 0; j< data[i].skills.length; j++){
-            array1[k] = data[i].skills[j];
-            k++;
-    }
-    }
-    var skillsArray = _.uniq(array1);
-    var sortedSkillsArray = _.sortBy(skillsArray);
-    console.log('Skills array sorted ', sortedSkillsArray);
-    var array2 = [{name:'',friends:0}];
-    console.log(array2);
-    for (i = 0; i<data.length; i++) {
-        array2[i].name = data[i].name;
-        array2[i].friends = data[i].friends.length;
-    }
-   // console.log(array2);
+];
+    console.log('Sorted skills array', _.sortBy(_.uniq(_.flatten(_.map(data, 'skills')))));
+    console.log('Names array sorted by friends quantity',_.map(_.orderBy(data,'friends.length'),'name'));
+    console.log('Array of friends names',_.uniq(_.map(_.flatten(_.map(data, 'friends')),'name')));
 
 });
