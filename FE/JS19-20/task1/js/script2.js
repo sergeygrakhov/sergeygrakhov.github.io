@@ -2,13 +2,13 @@ $(function(){
  $('.banner__link').click(function(e) {
      e.preventDefault();
      var parentClass = $(this).parent().attr('class');
-     if (parentClass == 'inactive') {
+     if (parentClass == 'innactive') {
          $(this).parent().removeClass('inactive');
-         $(this).parent().addClass('active');
+         $(this).parent().addClass('acctive');
      }
      else {
-         $(this).parent().removeClass('active');
-         $(this).parent().addClass('inactive');
+         $(this).parent().removeClass('acctive');
+         $(this).parent().addClass('innactive');
      }
 })
 });
