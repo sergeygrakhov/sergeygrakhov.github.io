@@ -293,8 +293,9 @@ header {
 
 .services {
   text-align: center;
-  width: 100%;
   background-color: #2a2d32; }
+  .services .wrapper {
+    background-color: #2a2d32; }
 
 .services__title {
   color: #fff;
@@ -326,8 +327,10 @@ header {
   color: #9e7923; }
 
 .news__banners {
-  background-color: #f7f7f7;
-  padding: 65px 0 80px 0; }
+  background-color: #f7f7f7; }
+  .news__banners .wrapper {
+    padding: 65px 0 80px 0;
+    background-color: #f7f7f7; }
   .news__banners .news, .news__banners .banners {
     display: inline-block;
     width: 48%;
@@ -451,8 +454,10 @@ header {
   margin: 0 18px; }
 
 .bottom__menu {
-  padding: 65px 0 85px 0;
   background-color: #2a2d32; }
+  .bottom__menu .wrapper {
+    padding: 65px 0 85px 0;
+    background-color: #2a2d32; }
 
 .bottom {
   display: inline-block;
@@ -483,8 +488,10 @@ header {
 
 footer {
   background-color: #35383c;
-  padding: 25px 0;
   font-size: 12px; }
+  footer .wrapper {
+    background-color: #35383c;
+    padding: 25px 0; }
   footer .address, footer .phone, footer .mail {
     position: relative;
     float: left;
