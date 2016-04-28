@@ -3,14 +3,11 @@ $(function(){
      e.preventDefault();
      var parentClass = $(this).parent().attr('class');
      if (parentClass == 'innactive') {
-         $(this).parent().siblings().removeClass('acctive');
-         $(this).parent().siblings().addClass('innactive');
-         $(this).parent().removeClass('innactive');
-         $(this).parent().addClass('acctive');
+         $(this).parent().siblings().removeClass('acctive').addClass('innactive', {duration:500});
+         $(this).parent().removeClass('innactive').addClass('acctive', {duration:500});
      }
      else {
-         $(this).parent().removeClass('acctive');
-         $(this).parent().addClass('innactive');
+         $(this).parent().removeClass('acctive').addClass('innactive', {duration:500});
      }
 })
 });

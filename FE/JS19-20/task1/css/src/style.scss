@@ -331,7 +331,7 @@ body {
     color: $sect-text;
     margin: 30px 0 0 0;
   }
-  .acctive,.innactive {
+  .acctive,.innactive, .banners > div {
     position: relative;
     margin: 10px;
 
@@ -349,6 +349,20 @@ body {
     font-size: 20px;
     border-right: $border-right-act;
   }
+.banner__link {
+  background-color: #fff;
+  color: #000;
+  border: $border-inactive;
+}
+.banner__link:before {
+  position: absolute;
+  display: block;
+  left: 15px;
+  width: 23px;
+  content: '+';
+  font-size: 20px;
+  border-right: $border-right;
+}
   .innactive .banner__link {
     background-color: #fff;
     color: #000;
