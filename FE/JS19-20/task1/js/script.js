@@ -1,4 +1,3 @@
-(function($) {
     $(function() {
         $('.jcarousel').jcarousel();
 
@@ -33,4 +32,3 @@
             })
             .jcarouselPagination();
     });
-})(jQuery);
