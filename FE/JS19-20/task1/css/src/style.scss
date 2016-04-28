@@ -206,6 +206,7 @@ body {
   }
   .services {
     text-align: center;
+    width:100%;
     background-color: $services-backcolor;
   }
   .services__title{
@@ -351,7 +352,7 @@ body {
   }
   .banner__link {
     display: block;
-    width: 520px;
+    width: 95%;
     line-height: 40px;
     text-decoration: none;
     padding: 0 0 0 50px;
@@ -361,7 +362,7 @@ body {
     font-size: 13px;
     color: $services-backcolor;
     padding: $banner-text-pad;
-    width: 500px;
+    width: 90%;
   }
   .logos {
     margin: 90px 0 100px 0;
