@@ -319,10 +319,22 @@ header {
     color: #fff;
     margin: 30px 0 70px 0; }
 
-.services__link:hover .blur {
+.services__hover {
+  width: 260px;
+  height: 260px; }
+
+.services__hover:after {
   display: block;
-  opacity: 0.6;
+  position: absolute;
+  content: ' ';
+  background: url("../../img/blur.png") 0 0 no-repeat;
+  width: 260px;
+  height: 260px;
+  opacity: 0;
   top: 0; }
+
+.services__link:hover .services__hover:after {
+  opacity: 0.6; }
 .services__link:hover span {
   color: #9e7923; }
 
