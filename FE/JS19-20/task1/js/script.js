@@ -12,3 +12,4 @@
             .jcarouselPagination();
     });
 })(jQuery);
+
