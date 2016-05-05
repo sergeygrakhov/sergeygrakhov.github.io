@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Jasmine unit testing</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jasmine.css">
+
+
+    <script type="text/javascript" src="../../../bonus/jasmine/lib/jasmine-core/jasmine.js"></script>
+    <script type="text/javascript" src="../../../bonus/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+    <script type="text/javascript" src="../../../bonus/jasmine/lib/jasmine-core/boot.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="../../../bonus/jasmine/lib/jasmine-core/jasmine-jquery.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script type="text/template" id="test">
+        <div class="wrapper">
+            <header><%= header %></header>
+            <form action="#" method=" ">
+                <ol>
+                    <% for (var i = 0; i < questions.length; i++) { %>
+                    <li><h4><%= questions[i].title %></h4>
+                        <% for (var j = 0; j < questions[i].answers.length; j++) { %>
+                        <p>
+                            <input type="checkbox" name="<%= questions[i].checkboxname[j] %>" id="<%= questions[i].id[j] %>"/>
+                            <label for="<%= questions[i].id[j] %>"><%= questions[i].answers[j] %></label>
+                        </p>
+                        <% }; %>
+                    </li>
+                    <% }; %>
+                </ol>
+                <footer>
+                    <input type="submit" value="<%= submit %>"/>
+                </footer>
+            </form>
+        </div>
+    </script>
+
+    <script type="text/javascript">
+
+
+
+        describe("ТЕСТЫ", function() {
+
+
+            describe("Проверка на идентичность обьекта вопросов", function() {
+
+                it ("Проверить", function() {
+                    expect(testing).toEqual(testProgram);
+                });
+            });
+            describe("Тестирование кнопки", function() {
+                var spyEvent;
+                it ("Проверить", function() {
+                    spyEvent = spyOnEvent('input:submit', 'click');
+                    $('input:submit').trigger( "click" );
+                    expect('click').toHaveBeenTriggeredOn('input:submit');
+                    expect(spyEvent).toHaveBeenTriggered();
+                    setTimeout(
+                            function()
+                            {$('#okbutton').trigger("click");}, 500);
+                });
+            });
+            describe("Проверка результата на ПРАВИЛЬНО", function() {
+                beforeEach (function()
+                {   $('#1').prop('checked',true);
+                    $('#5').prop('checked',true);
+                    $('#9').prop('checked',true);
+                });
+                it ("Проверить", function() {
+                    $('input:submit').trigger( "click" );
+                    expect(result).toEqual("Правильно!");
+                            setTimeout(
+                            function()
+                            {$('#okbutton').trigger("click");}, 500);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

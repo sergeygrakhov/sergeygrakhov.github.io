@@ -99,8 +99,7 @@ table {
   text-decoration: none;
   display: inline-block;
   text-indent: -9999px;
-  font-size: 11px;
-  line-height: 14px;
+  height: 14px;
   min-width: 14px;
   background: #fff;
   padding: 3px;
