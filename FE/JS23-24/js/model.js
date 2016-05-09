@@ -33,5 +33,5 @@ define ('model',['jquery'],function(data){
         self.data.splice(index,0,item);
     };
 }
-return new Model(data);
+return new Model(['Learn JS','Learn HTML','Learn CSS','Learn jQuery']);
 });
