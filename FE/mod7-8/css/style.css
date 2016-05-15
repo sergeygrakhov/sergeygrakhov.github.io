@@ -105,7 +105,7 @@
         color: #fff;
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
     }
-    .slider__title {
+    .section__title {
         color: #FFF;
         display: block;
         font-size: 60px;
@@ -404,7 +404,7 @@
         color: #fff;
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
     }
-    .slider__title {
+    .section__title {
         color: #FFF;
         display: block;
         font-size: 48px;
@@ -681,7 +681,7 @@
         color: #fff;
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
     }
-    .slider__title {
+    .section__title {
         color: #FFF;
         display: block;
         font-size: 36px;
@@ -942,7 +942,7 @@
         text-shadow: 0 1px 2px rgba(35, 35, 35, 1);
         text-align: center;
     }
-    .slider__title {
+    .section__title {
         color: #FFF;
         display: block;
         font-size: 36px;

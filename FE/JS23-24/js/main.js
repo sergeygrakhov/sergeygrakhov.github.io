@@ -14,7 +14,7 @@ requirejs.config({
 
 
 });
-require(['model','view','controller','jquery','lodash'], function(view,model,controller) {
+require(['model','view','controller','jquery','lodash'], function() {
 
 
 
