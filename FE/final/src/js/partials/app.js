@@ -1,15 +1,20 @@
 'use strict';
 $(function(){
-    var pool = ['vacation','travel','sport','nature','animals','health','history','relax','cat','flower','frontend','css','javascript','jQuery','css','html','programming','computer','robot','science','web','www','google','apple','ios'];
-    var random;
+    var pool = ['moto','sport','nature','animals','health','history','relax','cat','flower','auto','computer','robot','science','web','audi','subaru','skoda','bmw'];
+    function randomWord (min,max) {
+        var random = min - 0.5 + Math.random() * (max-min +1);
+        random = Math.round(random);
+        return random;
+    }
+    var rand;
     var string= '';
     for (var i=0; i<4; i++) {
-        random = Math.floor((Math.random() * pool.length +1));
-        searchPicture(pool[random],3)
+        rand = randomWord (0,pool.length-1);
+        searchPicture(pool[rand],3);
     }
     function searchPicture(text, quantity) {
         var message ='<div class="picture item noPic">There is no pictures for your query</div>';
-        if ((text.indexOf('.') !==-1) || (text.indexOf('!') !==-1)) {
+        if ((text.indexOf('.') !==-1) || (text.indexOf('!') !==-1) || (text.indexOf('?') !==-1)) {
             $('.grid').append(message)}
         else{
         $.getJSON('http://pixabay.com/api/?key=2563157-05cd126e344fd2fa56a52a281&q='+text+'&per_page='+quantity, function (data) {
@@ -17,6 +22,13 @@ $(function(){
                 var pictureSection = $('#pictureLayout').html();
                 var content = _.template(pictureSection)(data);
                 $('.grid').append(content);
+                var $grid = $('#container').imagesLoaded( function(){
+
+                    $grid.masonry({
+                        itemSelector: 'item',
+                        columnWidth: 250
+                    });
+                });
             }
             else $('.grid').append(message);
         });
@@ -31,15 +43,5 @@ $(function(){
             $('.picture').remove();
             searchPicture(string, 12);
         }
-
-
     });
-    var $grid = $('#container').imagesLoaded( function(){
-
-        $grid.masonry({
-                itemSelector: 'item',
-                columnWidth: 250
-        });
-    });
-
 });
