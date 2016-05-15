@@ -9,13 +9,12 @@ $(function(){
     }
     function searchPicture(text, quantity) {
         var message ='<div class="picture item noPic">There is no pictures for your query</div>';
-        if (text.indexOf('.') !==-1){
+        if ((text.indexOf('.') !==-1) || (text.indexOf('!') !==-1)) {
             $('.grid').append(message)}
         else{
         $.getJSON('http://pixabay.com/api/?key=2563157-05cd126e344fd2fa56a52a281&q='+text+'&per_page='+quantity, function (data) {
             if (data.hits.length) {
                 var pictureSection = $('#pictureLayout').html();
-                console.log(data.hits);
                 var content = _.template(pictureSection)(data);
                 $('.grid').append(content);
             }
