@@ -1,6 +1,7 @@
 'use strict';
+
 $(function(){
-    function initializeMasonry(){
+        function initializeMasonry(){
         $container.imagesLoaded( function() {
             $container.masonry({
                 columnWidth: function( containerWidth ) {
@@ -27,7 +28,8 @@ $(function(){
                     $('.grid').append(content);
                     initializeMasonry();
                 }
-                else {$('.grid').append(message);
+                else {
+                    $('.grid').append(message);
                     initializeMasonry();
                 }
             });
@@ -51,12 +53,13 @@ $(function(){
         rand = randomWord (0,pool.length-1);
         searchPicture(pool[rand],3);
     }
-    $('.searching')[0].addEventListener('click',function(e){
+    $('.searching').on('click',function(e){
         e.preventDefault();
         letsSearch()
-        });
-    $('input:text')[0].addEventListener('keydown', function(e){
+    });
+    $('input:text').on('keydown', function(e){
         if (e.keyCode == 13){
            letsSearch()
-        }});
+        }
+    });
 });
