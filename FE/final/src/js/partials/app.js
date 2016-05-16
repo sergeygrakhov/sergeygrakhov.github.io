@@ -27,7 +27,9 @@ $(function(){
                     $('.grid').append(content);
                     initializeMasonry();
                 }
-                else $('.grid').append(message);
+                else {$('.grid').append(message);
+                    initializeMasonry();
+                }
             });
         }
     }
