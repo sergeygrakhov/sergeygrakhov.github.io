@@ -17,7 +17,7 @@ $(function(){
     }
     function searchPicture(text, quantity) {
         var message ='<figure class="picture item" id="noPic"><img class="radius" src="img/no.jpg" alt="picture"></figure>';
-        if ((text.indexOf('.') !==-1) || (text.indexOf('!') !==-1) || (text.indexOf('?') !==-1)) {
+        if ((text.indexOf('.') !==-1) || (text.indexOf('\\') !==-1) || (text.indexOf('/') !==-1)|| (text.indexOf('!') !==-1) || (text.indexOf('?') !==-1)|| (text.indexOf('-') !==-1)|| (text.indexOf(':') !==-1)) {
             $('.grid').append(message);
             initializeMasonry();}
         else{
@@ -47,7 +47,7 @@ $(function(){
     }
     var $container = $('#container');
     var pool = ['moto','sport','nature','animals','health','history','relax','cat','flower','auto','computer','robot','science','web','audi','subaru','skoda','bmw'];
-        var rand;
+    var rand;
     var string= '';
     for (var i=0; i<4; i++) {
         rand = randomWord (0,pool.length-1);
