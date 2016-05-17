@@ -1,7 +1,6 @@
 'use strict';
 
 $(function(){
-
         function initializeMasonry(){
         $container.imagesLoaded( function() {
             $container.masonry({
@@ -24,7 +23,6 @@ $(function(){
         else{
             $.getJSON('http://pixabay.com/api/?key=2563157-05cd126e344fd2fa56a52a281&q='+text+'&per_page='+quantity, function (data) {
                 if (data.hits.length) {
-                    console.log(data);
                     var pictureSection = $('#pictureLayout').html();
                     var content = _.template(pictureSection)(data);
                     $('.grid').append(content);
