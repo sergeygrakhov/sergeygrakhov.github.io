@@ -25,8 +25,7 @@
 }
 header {
   color: $header-text-color;
-  background: $header-background;
-  background-size: cover;
+  background: url("../img/header_background.jpg");
   text-align: center;
   font-family: $montserratbold;
   font-size: $font-header-size;
