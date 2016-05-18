@@ -16,12 +16,14 @@ $(function(){
         return random;
     }
     function searchPicture(text, quantity) {
-        var message ='<figure class="picture item" id="noPic"><img class="radius" src="img/no.jpg" alt="picture"></figure>';
         if ((text.indexOf('.') !==-1) || (text.indexOf('\\') !==-1) || (text.indexOf('/') !==-1)|| (text.indexOf('!') !==-1) || (text.indexOf('?') !==-1)|| (text.indexOf('-') !==-1)|| (text.indexOf(':') !==-1)) {
             $('.grid').append(message);
             initializeMasonry();}
         else{
-            $.getJSON('http://pixabay.com/api/?key=2563157-05cd126e344fd2fa56a52a281&q='+text+'&per_page='+quantity, function (data) {
+            $.ajax({
+                url:'http://pixabay.com/api/?key=2563157-05cd126e344fd2fa56a52a281&q='+text+'&per_page='+quantity,
+                dataType: 'jsonp'
+            }).done(function(data) {
                 if (data.hits.length) {
                     var pictureSection = $('#pictureLayout').html();
                     var content = _.template(pictureSection)(data);
@@ -33,8 +35,7 @@ $(function(){
                     initializeMasonry();
                 }
             });
-        }
-    }
+    }}
     function letsSearch() {
         var elem = $('#seek');
         string = elem[0].value;
@@ -45,6 +46,7 @@ $(function(){
             searchPicture(string, 12);
         }
     }
+    var message ='<figure class="picture item" id="noPic"><img class="radius" src="img/no.jpg" alt="picture"></figure>';
     var $container = $('#container');
     var pool = ['moto','sport','nature','animals','health','history','relax','cat','flower','auto','computer','robot','science','web','audi','subaru','skoda','bmw'];
     var rand;

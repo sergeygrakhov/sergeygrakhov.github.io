@@ -18,9 +18,6 @@ header {
   text-align: center;
   font-family: $montserratbold;
   font-size: $font-header-size;
-  .wrapper {
-    padding-bottom: 240px;
-  }
 }
 .logo__name {
   font-size: $font-header-size;
@@ -429,6 +426,9 @@ footer {
   }
 }
 @media only screen and (min-width: $desktop-width) {
+  header .wrapper {
+    padding-bottom: 240px;
+  }
   .wrapper {
     width:  $desktop-width;
   }

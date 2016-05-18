@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--[if lte IE 8]>
+    <!--[if gte IE 8]>
     <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
     <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
@@ -116,23 +116,23 @@
         <div class="section__title">Meet a partner for your best holiday</div>
         <div class="people">
             <div class="partner">
-                <div class="partner__photo"><img src="img/partner1.png" alt="partner"/></div>
-                <div class="partner__name">Bradley Hunter</div>
+                <div class="partner__photo" id="p1"><img src="img/partner1.png" alt="partner"/></div>
+                <div class="partner__name" >Bradley Hunter</div>
                 <div class="partner__info">Based in Chicago. I love playing tennis and loud music.</div>
             </div>
             <div class="partner">
-                <div class="partner__photo"><img src="img/partner2.png" alt="partner"/></div>
+                <div class="partner__photo" id="p2"><img src="img/partner2.png" alt="partner"/></div>
                 <div class="partner__name">Heather Walker</div>
                 <div class="partner__info">I'm a happy person that loves cats and climbing on mountains.</div>
             </div>
             <div class="partner">
-                <div class="partner__photo"><img src="img/partner3.png" alt="partner"/></div>
-                <div class="partner__name">Lucas Marsha</div>
+                <div class="partner__photo" id="p3"><img src="img/partner3.png" alt="partner"/></div>
+                <div class="partner__name" >Lucas Marsha</div>
                 <div class="partner__info">I get my inspiration from nature and objects around me. I have a passion to
                 colours, typography and skateboards</div>
             </div>
             <div class="partner">
-                <div class="partner__photo"><img src="img/partner4.png" alt="partner"/></div>
+                <div class="partner__photo" id="p4"><img src="img/partner4.png" alt="partner"/></div>
                 <div class="partner__name">Bradley Hunter</div>
                 <div class="partner__info">Based in Chicago. I love playing tennis and loud music.</div>
             </div>
@@ -158,7 +158,7 @@
         <label for="seek" class="section__text">Hi! What are your holiday interests?</label>
         <div class="search">
             <input type="text" id="seek" placeholder="Enter your interest"/>
-            <a href="#" class="searching">Search partners</a>
+            <a href="#" class="searching" id="seekbutton">Search partners</a>
         </div>
     </div>
 </div>
