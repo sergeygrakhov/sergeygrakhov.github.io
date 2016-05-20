@@ -16,31 +16,26 @@ $(function(){
         return random;
     }
     function searchPicture(text, quantity) {
-        for (var j = 0; i < wrongSymbols.length; i++) {
-            if (text.indexOf(wrongSymbols[j]) !== -1) {
-                $('.grid').append(message);
-                initializeMasonry();
-                break;
-            }
-            else {
-                $.ajax({
-                    url: 'http://pixabay.com/api/?key=2563157-05cd126e344fd2fa56a52a281&q=' + text + '&per_page=' + quantity,
-                    dataType: 'jsonp'
-                }).done(function (data) {
-                    if (data.hits.length) {
-                        var pictureSection = $('#pictureLayout').html();
-                        var content = _.template(pictureSection)(data);
-                        $('.grid').append(content);
-                        initializeMasonry();
-                    }
-                    else {
-                        $('.grid').append(message);
-                        initializeMasonry();
-                    }
-                });
-            }
-        }
-    }
+        if ((text.indexOf('.') !==-1) || (text.indexOf('\\') !==-1) || (text.indexOf('/') !==-1)|| (text.indexOf('!') !==-1) || (text.indexOf('?') !==-1)|| (text.indexOf('-') !==-1)|| (text.indexOf(':') !==-1)) {
+            $('.grid').append(message);
+            initializeMasonry();}
+        else{
+            $.ajax({
+                url:'http://pixabay.com/api/?key=2563157-05cd126e344fd2fa56a52a281&q='+text+'&per_page='+quantity,
+                dataType: 'jsonp'
+            }).done(function(data) {
+                if (data.hits.length) {
+                    var pictureSection = $('#pictureLayout').html();
+                    var content = _.template(pictureSection)(data);
+                    $('.grid').append(content);
+                    initializeMasonry();
+                }
+                else {
+                    $('.grid').append(message);
+                    initializeMasonry();
+                }
+            });
+    }}
     function letsSearch() {
         var elem = $('#seek');
         string = elem[0].value;
@@ -51,7 +46,6 @@ $(function(){
             searchPicture(string, 12);
         }
     }
-    var wrongSymbols = ['.','\\','/','!','?','-',':'];
     var message ='<figure class="picture item" id="noPic"><img class="radius" src="img/no.jpg" alt="picture"></figure>';
     var $container = $('#container');
     var pool = ['moto','sport','nature','animals','health','history','relax','cat','flower','auto','computer','robot','science','web','audi','subaru','skoda','bmw'];
