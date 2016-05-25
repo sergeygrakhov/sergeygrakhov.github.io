@@ -1,7 +1,7 @@
 'use strict';
 
 $(function(){
-        function initializeMasonry(){
+    function initializeMasonry(){
         $container.imagesLoaded( function() {
             $container.masonry({
                 columnWidth: function( containerWidth ) {
@@ -35,7 +35,7 @@ $(function(){
                     initializeMasonry();
                 }
             });
-    }}
+        }}
     function letsSearch() {
         var elem = $('#seek');
         string = elem[0].value;
@@ -61,7 +61,7 @@ $(function(){
     });
     $('input:text').on('keydown', function(e){
         if (e.keyCode == 13){
-           letsSearch()
+            letsSearch()
         }
     });
 });
