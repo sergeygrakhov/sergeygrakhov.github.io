@@ -1,7 +1,4 @@
-
 $(window).load(function(){
-
-        $(function() {
             $('.jcarousel').jcarousel();
 
             $('.jcarousel-pagination')
@@ -13,6 +10,3 @@ $(window).load(function(){
                 })
                 .jcarouselPagination();
         });
-
-});
-
