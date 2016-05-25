@@ -1,6 +1,6 @@
 
 $(window).load(function(){
-    $(document).ready(function(){
+
         $(function() {
             $('.jcarousel').jcarousel();
 
@@ -13,5 +13,6 @@ $(window).load(function(){
                 })
                 .jcarouselPagination();
         });
-    });
+
 });
+
