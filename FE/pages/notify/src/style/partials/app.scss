@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: $wrapper-width;
+  width: $wrapper-width;
   margin: 0 auto;
   text-align: center;
 }
@@ -10,6 +10,7 @@ header {
   text-align: center;
   border-top: 10px solid #2ecc71;
   vertical-align: top;
+  min-width: $wrapper-width;
   .wrapper {
     position: relative;
   }
@@ -54,6 +55,7 @@ header {
   right: 0;
 }
 .main__section {
+  min-width: $wrapper-width;
   text-align: center;
   background-color: #FFF;
   .main__item{
@@ -79,6 +81,7 @@ header {
   }
 }
 .updates__section {
+  min-width: $wrapper-width;
   background-color: #e3e3e3;
   padding: 90px 0 60px 0;
   .updates__item {
@@ -135,6 +138,7 @@ header {
   }
 }
 .getin__section {
+  min-width: $wrapper-width;
   padding: 60px 0;
   text-align: center;
   .getin__cite {
@@ -190,6 +194,7 @@ header {
   }
 }
 footer {
+  min-width: $wrapper-width;
   background-color: #e3e3e3;
   padding: 60px 0;
   .footer__item{
