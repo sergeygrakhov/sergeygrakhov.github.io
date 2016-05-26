@@ -63,6 +63,12 @@ header {
     margin:60px 0;
     display: inline-block;
     vertical-align: top;
+    img {
+      transition: transform .8s ease-in-out;
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
     .main__tittle {
       margin: 30px 0;
       font-family: $ralewaybold;
