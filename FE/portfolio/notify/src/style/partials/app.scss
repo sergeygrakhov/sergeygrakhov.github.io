@@ -1,0 +1,208 @@
+.wrapper {
+  max-width: $wrapper-width;
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  background: url("../img/header_background.jpg") no-repeat top center #FFF;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  border-top: 10px solid #2ecc71;
+  vertical-align: top;
+  .wrapper {
+    position: relative;
+  }
+}
+.logo__section {
+  float: left;
+  margin: 165px 0 0 100px;
+  text-align: left;
+  .logo__title {
+    font-family: $helveticaneuemedium;
+    font-size: 24px;
+    color: white;
+    width: 460px;
+    margin:40px 0;
+    line-height: 50px;
+  }
+  .logo__apps{
+  margin:0 0 170px 0;
+  }
+  ul
+  li {
+    display: inline-block;
+  }
+}
+.logo__applink{
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+  img {
+    border-radius: 28px;
+  }
+  &:hover
+   img{
+    background-color: #2ecc71;
+  }
+}
+.image__section {
+  float: right;
+  margin: 95px 0 0;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+}
+.main__section {
+  text-align: center;
+  background-color: #FFF;
+  .main__item{
+    width: 315px;
+    margin:60px 0;
+    display: inline-block;
+    vertical-align: top;
+    .main__tittle {
+      margin: 30px 0;
+      font-family: $ralewaybold;
+      font-size: 22px;
+    }
+    .main__content{
+      font-family: $helveticaneuemedium;
+      color: #a5a5a5;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
+    &:nth-child(2){
+      margin: 60px 100px;
+    }
+  }
+}
+.updates__section {
+  background-color: #e3e3e3;
+  padding: 90px 0 60px 0;
+  .updates__item {
+    position: relative;
+    width:45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 0 10px;
+    .updates__tittle {
+      font-family: $ralewaybold;
+      font-size: 22px;
+    }
+    label {
+      font-family: $helveticaneuemedium;
+      font-size: 16px;
+      color: #a1a1a1;
+      display: block;
+      margin: 28px 0;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+    input[type=text] {
+      font-family: $helveticaneuemedium;
+      font-size: 18px;
+      color: #a1a1a1;
+      border-radius: 15px 0 0 15px;
+      border: 1px solid #a1a1a1;
+      outline: none;
+      padding: 0 0 0 25px;
+      line-height: 55px;
+      width: 45%;
+    }
+    .button{
+      display: inline-block;
+      position: absolute;
+      border-radius: 0 15px 15px 0;
+      font-family: $ralewaybold;
+      font-size: 22px;
+      color: #fff;
+      width: 140px;
+      line-height: 57px;
+      background-color: #2ecc71;
+      text-decoration: none;
+      text-align: center;
+      &:hover{
+        color: #000;
+      }
+    }
+    &:nth-child(2){
+      text-align: center;
+
+    }
+  }
+}
+.getin__section {
+  padding: 60px 0;
+  text-align: center;
+  .getin__cite {
+    padding: 0 15%;
+    font-family: $helveticaneueitalic;
+    font-size: 18px;
+    line-height: 30px;
+    color: #a1a1a1;
+  }
+  .getin__author{
+    font-family: $ralewaybold;
+    font-size: 18px;
+    margin: 30px 0;
+  }
+  .getin__humans{
+    padding: 0 0 60px 0;
+    img{
+      vertical-align: middle;
+      padding:2px;
+      &:hover{
+        width:54px;
+        height:54px;
+        padding:0;
+      }
+    }
+  }
+  .getin__item{
+    display: inline-block;
+    margin: 0 10px;
+    .getin__link{
+      display: block;
+      background-color: #a1a1a1;
+      border-radius: 17px;
+      width: 34px;
+      height: 34px;
+      &:hover{
+        img{
+          border-radius: 17px;
+          background-color: #2ecc71;
+        }
+      }
+    }
+  }
+  .getin__tittle{
+    font-family: $ralewaybold;
+    font-size: 24px;
+  }
+  .getin__text{
+    margin: 30px 0;
+    font-family: $helveticaneuemedium;
+    font-size: 16px;
+    color: #a1a1a1;
+  }
+}
+footer {
+  background-color: #e3e3e3;
+  padding: 60px 0;
+  .footer__item{
+    display: inline-block;
+    font-family: $helveticaneuemedium;
+    font-size: 16px;
+    margin: 0 20px;
+    .footer__link{
+      text-decoration: none;
+      color: #b4b4b4;
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+}
