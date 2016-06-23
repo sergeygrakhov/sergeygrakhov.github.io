@@ -1,0 +1,36 @@
+.link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 20px;
+    border-top: 1px solid #000;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+}
+ul {
+    padding: 0 0 0 15px;
+}
+p {
+    padding: 15px 10px 20px;
+    font-size: 12px;
+}
+li {
+    display: inline-block;
+}
+.wrapper {
+    margin: 50px auto;
+    padding: 10px;
+    width: 800px;
+    border: 1px solid gray;
+}
+.tab {
+    margin: -2px 5px 5px 5px;
+    border: 1px solid #000;
+
+}
+.active {
+    background-color: #FFF;
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <title>Homework JS 13-14</title>
+</head>
+<body>
+<script type="text/template" id="test">
+    <div class="wrapper">
+    <header><%= header %></header>
+        <form action="#" method=" ">
+            <ol>
+                <% for (var i = 0; i < questions.length; i++) { %>
+                <li><h4><%= questions[i].title %></h4>
+                    <% for (var j = 0; j < questions[i].answers.length; j++) { %>
+                    <p>
+                        <input type="checkbox" name="<%= questions[i].checkboxname[j] %>" id="<%= questions[i].id[j] %>"/>
+                        <label for="<%= questions[i].id[j] %>"><%= questions[i].answers[j] %></label>
+                    </p>
+                    <% }; %>
+                </li>
+                <% }; %>
+            </ol>
+            <footer>
+                <input type="submit" value="<%= submit %>"/>
+            </footer>
+        </form>
+    </div>
+</script>
+</body>
+</html>

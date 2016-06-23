@@ -1,0 +1,31 @@
+.wrapper {
+    width: 800px;
+    margin: 50px auto;
+}
+form {
+    border: 1px solid #FFF;
+}
+.block {
+    margin: 20px 0 25px 10px;
+}
+.superblock {
+    margin: 15px;
+    border: 1px solid #000;
+}
+label {
+    display: inline-block;
+    width: 100px;
+}
+input[type=button] {
+    margin:0 0 0 15px;
+}
+p {
+    display: inline-block;
+    margin: -6px 0 -6px 20px;
+    padding: 0 0 0 10px;
+    border-radius: 3px;
+    width: 250px;
+    line-height: 30px;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px 5px rgba(143,133,143,1);
+}

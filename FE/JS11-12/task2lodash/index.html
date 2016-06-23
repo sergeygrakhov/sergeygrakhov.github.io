@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/script.js"></script>
+    <title>Homework JS 11-12 task2 lodash</title>
+</head>
+<body>
+<script type="text/template" id="profile">
+    <div class="main">
+        <h1><%= name %></h1>
+        <div class="photo">
+            <img src="<%= photo.src %>" alt="<%= photo.alt %>" title="<%= photo.title %>" width="<%= photo.width %>" >
+        </div>
+        <div class="line">
+            <p><%= job %></p>
+        </div>
+        <div class="line">
+            <h4><%= why %></h4>
+            <ul>
+                <% for (var i = 0; i < reasons.length; i++) { %>
+                <li><%= reasons[i] %></li>
+                <% }; %>
+            </ul>
+        </div>
+        <div class="line">
+            <div class="box">
+                <h4><%= tel %></h4>
+                <p><%= number %></p>
+            </div>
+            <div class="box">
+                <h4><%= fb %></h4>
+                <p><%= fb_link %></p>
+            </div>
+        </div>
+        <div class="box">
+            <h4><%= feedback %></h4>
+            <p><%= feedback_text %></p>
+        </div>
+    </div>
+</script>
+</body>
+</html>

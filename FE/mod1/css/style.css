@@ -1,0 +1,30 @@
+.photo,
+h1 {
+    text-align: center;
+}
+
+body{
+    background-color: lightgray;
+}
+.main {
+    padding: 10px 30px 20px;
+    margin: 0 auto;
+    background-color: white;
+    width: 400px;
+}
+p,
+h4 {
+    font-weight: normal;
+    font-style: normal;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+p {
+    margin-top: 8px;
+}
+h4 {
+    margin-bottom: 10px;
+}
+.line {
+    border-bottom: solid 1px black;
+}

@@ -1,0 +1,150 @@
+body {
+    background: url("../img/background.png") repeat-x top center #0C75A0;
+}
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+    font-size: 0;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+.flag li {
+    display:inline-block;
+}
+.flag li a {
+    color: #5FA5BB;
+    font-size: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+.window {
+    margin: 38px auto 0 auto;
+    width: 1000px;
+}
+.header {
+    background-color: #FFF;
+    height: 175px;
+}
+.header,
+.menu{
+    width: 1000px;
+}
+.logo {
+    float:left;
+    margin: 9px 0 0 25px;
+}
+.inf {
+    margin-left: 100px;
+
+}
+.information {
+    margin-top: 8px;
+    float:right;
+    color: #5FA5BB;
+}
+.information h4,
+.contacts {
+    margin-left: 100px;
+}
+.flag {
+    margin: 36px 35px 0 0;
+}
+.flag li a{
+    display: inline-block;
+    margin: 0 5px 0 5px;
+}
+.photo {
+    height: 240px;
+}
+.photo img{
+    border-top: 1px solid   #128aa7;
+    border-bottom: 1px solid   #128aa7;
+}
+.menu{
+    border-bottom: 1px solid #000;
+}
+.menu ul li,
+.drop li{
+    line-height: 30px;
+    display: inline-block;
+}
+.menu ul li {
+    float: left;
+    height: 30px;
+    position: relative;
+    width: 141px;
+    z-index: 1;
+    background-color: #303030;
+    text-align: center;
+    color: #FFF;
+}
+/*что б подравнять ширину меню */
+.menu > ul > li:last-child {
+    width:154px;
+}
+/* */
+.drop li:first-child{
+    border-top: 1px solid #000;
+}
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #303030;
+}
+.menu ul li ul li {
+    float:none;
+    display: block;
+    background-color: #303030;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+.drop  li:hover {
+text-decoration: underline;
+}
+.content {
+    overflow: hidden;
+    width: 1000px;
+}
+.center {
+    width: 578px;
+    background-color: #FFF;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
+}
+.info,
+.news {
+    text-align: center;
+    color: #424c43;
+    background-color: #edeef0;
+    width: 210px;
+}
+.info h3,
+.news h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.info ul li,
+.news ul li {
+    margin:6px 0;
+}
+.info,
+.news,
+.center{
+    float:left;
+ }
+.footer {
+    color: #FFF;
+    text-align: center;
+    margin: 20px 0;
+}
+.info,
+.news,
+.center {
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}

@@ -1,0 +1,17 @@
+.wrapper {
+    width:  600px;
+    margin: 30px 0 0 50px;
+    font-size: 18px;
+    font-family: Arial,sans-serif;
+}
+input[type=submit] {
+width:  300px;
+height:  40px;
+background-color:  #BCE7F5;
+margin:  50px 0 0 0;
+border: 2px solid black;
+}
+header,
+footer {
+    text-align: center;
+}

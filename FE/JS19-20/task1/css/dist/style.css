@@ -1,0 +1,553 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=reset.css.map */
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../../fonts/ubuntu-l-webfont.eot");
+  src: url("../../fonts/ubuntu-l-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-l-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-l-webfont.woff") format("woff"), url("../../fonts/ubuntu-l-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntumedium';
+  src: url("../../fonts/ubuntu-m-webfont.eot");
+  src: url("../../fonts/ubuntu-m-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-m-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-m-webfont.woff") format("woff"), url("../../fonts/ubuntu-m-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubunturegular';
+  src: url("../../fonts/ubuntu-r-webfont.eot");
+  src: url("../../fonts/ubuntu-r-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-r-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-r-webfont.woff") format("woff"), url("../../fonts/ubuntu-r-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.jcarousel-wrapper {
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.jcarousel li {
+  float: left; }
+
+/** Carousel Controls **/
+/** Carousel Pagination **/
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 48%; }
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  text-indent: -9999px;
+  height: 14px;
+  min-width: 14px;
+  background: #fff;
+  padding: 3px;
+  margin-right: 2px; }
+
+.jcarousel-pagination a.active {
+  background: url("../../img/active-slide.png") #FFF 6px 6px no-repeat;
+  text-indent: -9999px; }
+
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  font-size: 0; }
+
+body {
+  font-family: ubuntumedium, sans-serif; }
+
+.blur {
+  position: absolute;
+  display: none; }
+
+header {
+  margin: 45px 0 37px 0; }
+
+.wrapper {
+  width: 1160px;
+  margin: 0 auto; }
+
+.logo {
+  float: left; }
+
+.logo__text :first-child {
+  font-family: ubuntumedium, sans-serif;
+  font-size: 30px; }
+.logo__text :last-child {
+  font-family: ubuntulight, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 0 0 0 3px; }
+
+.icons {
+  float: right;
+  margin: 10px 0 0 0; }
+
+.logo__image, .logo__text {
+  display: inline-block; }
+
+.icon__item {
+  display: inline-block; }
+  .icon__item a {
+    display: block;
+    height: 17px;
+    width: 17px;
+    background: url("../../img/sprite2.png") 0 0 no-repeat;
+    transition: 0.2s;
+    margin: 0 0 0 15px; }
+  .icon__item .icon__facebook:hover {
+    background-position: 0 -18px; }
+  .icon__item .icon__twitter {
+    background-position: -18px 0; }
+  .icon__item .icon__twitter:hover {
+    background-position: -18px -18px; }
+  .icon__item .icon__rss {
+    background-position: -36px 0; }
+  .icon__item .icon__rss:hover {
+    background-position: -36px -18px; }
+  .icon__item .icon__linkedin {
+    background-position: -54px 0; }
+  .icon__item .icon__linkedin:hover {
+    background-position: -54px -18px; }
+  .icon__item .icon__skype {
+    background-position: -72px 0; }
+  .icon__item .icon__skype:hover {
+    background-position: -72px -18px; }
+
+.topmenu .wrapper {
+  background: #2a2d32; }
+
+.menu {
+  float: left; }
+  .menu .menu__item {
+    display: inline-block; }
+  .menu .menu__item:first-child .menu__link {
+    background-color: #248cec; }
+  .menu .menu__link {
+    display: block;
+    text-decoration: none;
+    line-height: 55px;
+    color: #fff;
+    padding: 0 40px;
+    border-right: 1px solid #000; }
+  .menu .menu__link:hover {
+    color: #9e7923; }
+
+.search {
+  position: relative;
+  float: right; }
+  .search input[type=text] {
+    background: #35383c;
+    height: 38px;
+    border: 1px solid #000;
+    width: 238px;
+    margin: 8px;
+    padding: 0 0 0 15px; }
+  .search ::-webkit-input-placeholder {
+    color: #000; }
+  .search input[type=image] {
+    position: absolute;
+    left: 240px;
+    top: 20px; }
+
+.slider {
+  margin: 40px 0 70px 0; }
+
+.sections {
+  text-align: center;
+  margin: 0 0 90px 0; }
+
+.section {
+  display: inline-block;
+  width: 350px;
+  position: relative; }
+
+.section__number {
+  display: inline-block;
+  width: 80px;
+  vertical-align: top;
+  font-size: 90px;
+  font-family: ubuntumedium, sans-serif;
+  color: #efeff0; }
+
+.section__content {
+  text-align: left;
+  display: inline-block;
+  width: 240px;
+  padding: 50px 0 0 25px; }
+
+.section__content:before {
+  content: " ";
+  position: absolute;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  top: 15px; }
+
+.section:first-child .section__content:before {
+  background: url("../../img/sprite1.png") 0 0 no-repeat; }
+
+.section:nth-child(2) .section__content:before {
+  background: url("../../img/sprite1.png") -32px 0 no-repeat; }
+
+.section:last-child .section__content:before {
+  background: url("../../img/sprite1.png") -64px 0 no-repeat; }
+
+.section__title {
+  font-family: ubuntumedium, sans-serif;
+  font-size: 20px; }
+
+.section__text {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #8a8a8a; }
+
+.section__link {
+  display: block;
+  font-family: ubuntumedium, sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  color: #248cec;
+  margin: 22px 0 0 0; }
+
+.section .section__link:after {
+  content: " ";
+  position: absolute;
+  overflow: hidden;
+  width: 10px;
+  height: 10px;
+  background: url("../../img/arrow.png") 0 0 no-repeat;
+  transition: 0.2s;
+  top: 189px;
+  left: 180px; }
+
+.section__link:hover {
+  color: #8a8a8a; }
+
+.section__link:hover::after {
+  background: url("../../img/arrow.png") -10px 0 no-repeat; }
+
+.services {
+  text-align: center;
+  background-color: #2a2d32; }
+  .services .wrapper {
+    background-color: #2a2d32; }
+
+.services__title {
+  color: #fff;
+  margin: 0 0 50px 0;
+  padding: 50px 0 0 0;
+  font-size: 24px;
+  text-align: left; }
+
+.services__items {
+  display: inline-block;
+  margin: 0 10px; }
+
+.services__link {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  width: 257px;
+  text-align: center; }
+  .services__link span {
+    display: block;
+    color: #fff;
+    margin: 30px 0 70px 0; }
+
+.services__hover {
+  width: 260px;
+  height: 260px; }
+
+.services__hover:after {
+  display: block;
+  position: absolute;
+  content: ' ';
+  background: url("../../img/blur.png") 0 0 no-repeat;
+  width: 260px;
+  height: 260px;
+  opacity: 0;
+  top: 0; }
+
+.services__link:hover .services__hover:after {
+  opacity: 0.6; }
+.services__link:hover span {
+  color: #9e7923; }
+
+.news__banners {
+  background-color: #f7f7f7; }
+  .news__banners .wrapper {
+    padding: 65px 0 80px 0;
+    background-color: #f7f7f7; }
+  .news__banners .news, .news__banners .banners {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top; }
+  .news__banners .news__title, .news__banners .banners__title {
+    font-size: 24px;
+    margin: 0 0 45px 0; }
+
+.news__section {
+  position: relative;
+  margin: 0 0 30px 0; }
+
+.section__info, .news__pic {
+  display: inline-block;
+  vertical-align: top; }
+
+.news__pic {
+  width: 170px;
+  padding: 0 0 0 20px; }
+
+.section__info {
+  width: 360px; }
+
+.news__date {
+  position: absolute;
+  top: 15px;
+  left: 0; }
+
+.news__month, .news__day {
+  font-family: ubuntumedium, sans-serif;
+  width: 40px;
+  line-height: 40px;
+  text-align: center; }
+
+.news__month {
+  background-color: #248cec;
+  color: #fff;
+  font-size: 15px; }
+
+.news__day {
+  background-color: #f4b60d;
+  color: #000;
+  font-size: 18px; }
+
+.sections__link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000; }
+
+.sections__link:hover {
+  color: #248cec; }
+
+.section__author {
+  font-family: Arial, sans-serif;
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  color: #c2c2c2; }
+  .section__author .color {
+    color: #248cec; }
+
+.section__text {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #c2c2c2;
+  margin: 30px 0 0 0; }
+
+.acctive, .innactive, .banners > div {
+  position: relative;
+  margin: 10px; }
+
+.acctive .banner__link {
+  background-color: #f4b60d;
+  color: #FFF; }
+
+.acctive .banner__link:before {
+  position: absolute;
+  content: '-';
+  display: block;
+  width: 23px;
+  left: 15px;
+  font-size: 20px;
+  border-right: 1px solid #f6c53d; }
+
+.banner__link {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #e8e8e8; }
+
+.banner__link:before {
+  position: absolute;
+  display: block;
+  left: 15px;
+  width: 23px;
+  content: '+';
+  font-size: 20px;
+  border-right: 1px solid #e8e8e8; }
+
+.innactive .banner__link {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #e8e8e8; }
+
+.innactive .banner__link:before {
+  position: absolute;
+  display: block;
+  left: 15px;
+  width: 23px;
+  content: '+';
+  font-size: 20px;
+  border-right: 1px solid #e8e8e8; }
+
+.innactive .banner__text {
+  display: none; }
+
+.banner__link {
+  display: block;
+  width: 95%;
+  line-height: 40px;
+  text-decoration: none;
+  padding: 0 0 0 50px; }
+
+.banner__text {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #2a2d32;
+  padding: 25px 0 40px 40px;
+  width: 90%; }
+
+.logos {
+  margin: 90px 0 100px 0;
+  text-align: center; }
+
+.logos__image {
+  display: inline-block;
+  margin: 0 18px; }
+
+.bottom__menu {
+  background-color: #2a2d32; }
+  .bottom__menu .wrapper {
+    padding: 65px 0 85px 0;
+    background-color: #2a2d32; }
+
+.bottom {
+  display: inline-block;
+  width: 250px;
+  margin: 0 15px;
+  text-align: center; }
+
+.bottom__title {
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 0 45px 0; }
+
+.bottom__link {
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #545659;
+  line-height: 35px; }
+
+.bottom__link:hover {
+  color: #248cec; }
+
+.bottom__item:nth-child(n+2) {
+  border-top: 1px solid #393c40; }
+
+footer {
+  background-color: #35383c;
+  font-size: 12px; }
+  footer .wrapper {
+    background-color: #35383c;
+    padding: 25px 0; }
+  footer .address, footer .phone, footer .mail {
+    position: relative;
+    float: left;
+    color: #545659;
+    margin: 0 0 0 25px; }
+  footer .address:before {
+    content: " ";
+    position: absolute;
+    width: 14px;
+    height: 18px;
+    left: -15px;
+    top: -4px;
+    background: url("../../img/location.png") 0 0 no-repeat; }
+  footer .phone:before {
+    content: " ";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    left: -15px;
+    top: -3px;
+    background: url("../../img/phone.png") 0 0 no-repeat; }
+  footer .mail:before {
+    content: " ";
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    left: -19px;
+    top: -1px;
+    background: url("../../img/mail.png") 0 0 no-repeat; }
+  footer .copy {
+    float: right;
+    color: #545659; }
+
+/*# sourceMappingURL=style.css.map */

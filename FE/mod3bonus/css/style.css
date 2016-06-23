@@ -1,0 +1,40 @@
+.window {
+    margin:auto;
+    width: 960px;
+    height: 883px;
+    background-image: url("../img/background.gif");
+}
+.mainbox {
+    text-align: center;
+}
+.up-line {
+    margin-bottom: 50px;
+}
+.country {
+    display: inline-block;
+}
+.back {
+    position: relative;
+    top: 55px;
+    left: 75px;
+}
+.logo {
+    display: inline-block;
+}
+.contacts {
+    margin-left: 380px;
+    display: inline-block;
+    color: #FFF;
+    text-align: left;
+}
+.textcaption {
+    color: #FFF;
+    text-align: center;
+ }
+.footer {
+    clear: both;
+    color: #FFF;
+    padding-top: 180px;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/carousel.css"/>
+    <link rel="stylesheet" href="css/nice-select.css"/>
+    <link rel="stylesheet" href="css/service.flatcheckbox.jquery.css"/>
+    <script src="https://oss.maxcdn.com/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/service.flatcheckbox.jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/script3.js"></script>
+    <title>Homework JS 9-10 task1</title>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Карусель</h1>
+
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul>
+                <li><img src="img/1.jpg" alt="pic" width="600" height="400"/></li>
+                <li><img src="img/2.jpg" alt="pic" width="600" height="400"/></li>
+                <li><img src="img/3.jpg" alt="pic" width="600" height="400"/></li>
+            </ul>
+        </div>
+        <p class="photo-credits">
+            Photos by <a href="#">google</a>
+        </p>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        <p class="jcarousel-pagination">
+        </p>
+    </div>
+    <div class="noStandartSelect">
+    <h1>Селект</h1>
+        <label for="sel">Нестандартный селект</label>
+        <select id="sel">
+            <option value="Item 1">Lorem ipsum dolor sit amet, consectetur adipisicing.</option>
+            <option value="Item 2">Adipisci laudantium nihil quam ratione unde.</option>
+            <option value="Item 3">Facere hic illo minus perferendis quos!</option>
+            <option value="Item 4">Repellendus similique sunt totam veniam, vitae. Quos.</option>
+        </select>
+    </div>
+    <div class="noStandartCheckbox">
+    <h1>Чекбоксы jQuery</h1>
+    <div class="box">
+        <input type="checkbox"  id="chkbox0" name="ch1"/>
+    </div>
+    <div class="box">
+        <input type="checkbox"  checked="checked" id="chkbox1" name="ch2"/>
+    </div>
+    <div class="box">
+        <input type="checkbox"  id="chkbox2" name="ch3" />
+    </div>
+    </div>
+    <div class="noStandartCheckboxCss">
+        <h1>Чекбоксы CSS</h1>
+        <div class="box">
+            <input type="checkbox"  id="ch1" name="ch1"/>
+            <label for="ch1">Чекбокс 1</label>
+        </div>
+        <div class="box">
+            <input type="checkbox"  checked="checked" id="ch2" name="ch2"/>
+            <label for="ch2">Чекбокс 2</label>
+        </div>
+        <div class="box">
+            <input type="checkbox"  id="ch3" name="ch3" />
+            <label for="ch3">Чекбокс 3</label>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
